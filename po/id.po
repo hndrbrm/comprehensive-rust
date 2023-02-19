@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-02-19 12:35+0700\n"
+"PO-Revision-Date: 2023-02-19 12:52+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -34,7 +34,7 @@ msgstr "Terjemahan"
 
 #: src/SUMMARY.md:8
 msgid "Using Cargo"
-msgstr "Menggunakan Cargo"
+msgstr "Penggunaan Cargo"
 
 #: src/SUMMARY.md:9
 msgid "Rust Ecosystem"
@@ -1221,7 +1221,7 @@ msgstr ""
 
 #: src/cargo.md:1
 msgid "# Using Cargo"
-msgstr ""
+msgstr "# Penggunaan Cargo"
 
 #: src/cargo.md:3
 msgid ""
@@ -1231,30 +1231,39 @@ msgid ""
 "give a brief overview of what Cargo is and how it fits into the wider ecosystem\n"
 "and how it fits into this training."
 msgstr ""
+"Ketika anda mulai membaca tentang Rust, anda akan segera berkenalan dengan [Cargo](https://doc."
+"rust-lang.org/cargo/), aplikasi standar yang digunakan dalam ekosistem Rust untuk membangun dan "
+"menjalankan aplikasi Rust. Di sini kami akan memberikan gambaran singkat mengenai apa itu Cargo "
+"dan bagaimana perannya didalam ekosistem yang lebih luas dan bagaimana kaitannya dengan pelatihan "
+"ini."
 
 #: src/cargo.md:8
 msgid "## Installation"
-msgstr ""
+msgstr "## Instalasi"
 
 #: src/cargo.md:10
 msgid "### Rustup (Recommended)"
-msgstr ""
+msgstr "### Rustup (Dianjurkan)"
 
 #: src/cargo.md:12
 msgid ""
 "You can follow the instructions to install cargo and rust compiler, among other standard ecosystem "
 "tools with the [rustup][3] tool, which is maintained by the Rust Foundation."
 msgstr ""
+"Anda bisa mengikuti instruksi untuk menginstal cargo dan kompiler Rust, sekaligus dengan aplikasi "
+"ekosistem standar lainnya menggunakan [rustup][3], yang dikelola oleh Yayasan Rust."
 
 #: src/cargo.md:14
 msgid ""
 "Along with cargo and rustc, Rustup will install itself as a command line utility that you can use "
 "to install/switch toolchains, setup cross compilation, etc."
 msgstr ""
+"Bersamaan dg cargo dan rustc, Rustup akan menginstal dirinya sendiri sebagai utilitas baris "
+"perintah yang dapat anda gunakan untuk menginstal/memilih toolchain, kompilasi silang, dsb."
 
 #: src/cargo.md:16
 msgid "### Package Managers"
-msgstr ""
+msgstr "### Pengelola Paket"
 
 #: src/cargo.md:18
 msgid "#### Debian"
@@ -1263,6 +1272,8 @@ msgstr ""
 #: src/cargo.md:20
 msgid "On Debian/Ubuntu, you can install Cargo, the Rust source and the [Rust formatter][6] with"
 msgstr ""
+"Pada Debian/Ubuntu, anda dapat menginstal Cargo, kode sumber Rust, dan [pengatur format Rust][6] "
+"melalui perintah berikut"
 
 #: src/cargo.md:22
 msgid ""
@@ -1276,6 +1287,9 @@ msgid ""
 "This will allow [rust-analyzer][1] to jump to the definitions. We suggest using\n"
 "[VS Code][2] to edit the code (but any LSP compatible editor works)."
 msgstr ""
+"Ini akan memungkinkan [rust-analyzer][1] untuk melompat ke definisi simbol. Kami menyarankan untuk "
+"menggunakan [VS Code][2] untuk mengedit kode (tetapi editor lain yang kompatibel dengan LSP juga "
+"dapat digunakan)."
 
 #: src/cargo.md:29
 msgid ""
@@ -1283,6 +1297,10 @@ msgid ""
 "have their own tradeoffs. If you prefer them, you can install the [Rust Plugin][5]. Please take "
 "note that as of January 2023 debugging only works on the CLion version of the JetBrains IDEA suite."
 msgstr ""
+"Beberapa orang lebih suka menggunakan IDE [JetBrains][4], yang memiliki skrip analisis sendiri "
+"beserta untung ruginya. Jika anda lebih suka menggunakan IDE ini, Anda dapat menginstal [Rust "
+"Plugin][5]. Harap perhatikan bahwa mulai Januari 2023, proses debug hanya berfungsi pada versi "
+"CLion dari suite IDEA JetBrains."
 
 #: src/cargo.md:31
 msgid ""
