@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-02-19 13:30+0700\n"
+"PO-Revision-Date: 2023-02-20 01:14+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -1466,7 +1466,7 @@ msgstr "[Buku Cargo resmi]: https://doc.rust-lang.org/cargo/"
 
 #: src/cargo/code-samples.md:1
 msgid "# Code Samples in This Training"
-msgstr ""
+msgstr "# Contoh Kode dalam Pelatihan Ini"
 
 #: src/cargo/code-samples.md:3
 msgid ""
@@ -1474,6 +1474,9 @@ msgid ""
 "which can be executed through your browser. This makes the setup much easier and\n"
 "ensures a consistent experience for everyone."
 msgstr ""
+"Pada pelatihan ini, kita akan menjelajahi bahasa Rust melalui berbagai contoh, yang dapat "
+"dijalankan secara langsung di peramban anda. Hal ini menjadikan pengaturan menjadi lebih mudah dan "
+"memastikan pengalaman yang konsisten untuk semua peserta."
 
 #: src/cargo/code-samples.md:7
 msgid ""
@@ -1481,10 +1484,13 @@ msgid ""
 "exercises. On the last day, we will do a larger exercise which shows you how to\n"
 "work with dependencies and for that you need Cargo."
 msgstr ""
+"Instalasi Cargo sangat dianjurkan: karena memudahkan anda untuk mengerjakan latihan. Pada hari "
+"terakhir, kita akan melakukan latihan yang melibatkan dependensi dan untuk keperluan tersebut anda "
+"membutuhkan Cargo."
 
 #: src/cargo/code-samples.md:11
 msgid "The code blocks in this course are fully interactive:"
-msgstr ""
+msgstr "Blok kode dalam kursus ini sepenuhnya interaktif:"
 
 #: src/cargo/code-samples.md:13
 msgid ""
@@ -1494,24 +1500,34 @@ msgid ""
 "}\n"
 "```"
 msgstr ""
+"```rust,editable\n"
+"fn main() {\n"
+"    println!(“Edit saya!”);\n"
+"}\n"
+"```"
 
 #: src/cargo/code-samples.md:19
 msgid ""
 "You can use <kbd>Ctrl + Enter</kbd> to execute the code when focus is in the\n"
 "text box."
 msgstr ""
+"Anda dapat menggunakan <kbd>Ctrl + Enter</kbd> untuk menjalankan kode saat fokus ada di kotak teks."
 
 #: src/cargo/code-samples.md:24
 msgid ""
 "Most code samples are editable like shown above. A few code samples\n"
 "are not editable for various reasons:"
 msgstr ""
+"Sebagian besar contoh dapat diedit kodenya seperti di atas. Tetapi beberapa tidak dapat diedit "
+"karena berbagai alasan:"
 
 #: src/cargo/code-samples.md:27
 msgid ""
 "* The embedded playgrounds cannot execute unit tests. Copy-paste the\n"
 "  code and open it in the real Playground to demonstrate unit tests."
 msgstr ""
+"* Embedded Playground tidak dapat menjalankan kode unit test. Salin dan tempel kode tersebut pada "
+"Playground sebenarnya untuk menjalankan unit test."
 
 #: src/cargo/code-samples.md:30
 msgid ""
@@ -1520,6 +1536,9 @@ msgid ""
 "  solve the exercises using a local Rust installation or via the\n"
 "  Playground."
 msgstr ""
+"* Embedded Playground akan kembali seperti semula ketika anda beralih ke halaman lain! Inilah "
+"alasan mengapa peserta sebaiknya menyelesaikan latihan menggunakan Rust yg sudah terinstall atau "
+"menggunakan Playground."
 
 #: src/cargo/running-locally.md:1
 msgid "# Running Code Locally with Cargo"
