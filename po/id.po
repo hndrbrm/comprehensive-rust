@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-02-19 12:52+0700\n"
+"PO-Revision-Date: 2023-02-19 13:30+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -1314,17 +1314,17 @@ msgstr ""
 
 #: src/cargo/rust-ecosystem.md:1
 msgid "# The Rust Ecosystem"
-msgstr ""
+msgstr "# Ekosistem Rust"
 
 #: src/cargo/rust-ecosystem.md:3
 msgid "The Rust ecosystem consists of a number of tools, of which the main ones are:"
-msgstr ""
+msgstr "Ekosistem Rust terdiri dari sejumlah alat, di antaranya yang utama adalah:"
 
 #: src/cargo/rust-ecosystem.md:5
 msgid ""
 "* `rustc`: the Rust compiler which turns `.rs` files into binaries and other\n"
 "  intermediate formats."
-msgstr ""
+msgstr "* `rustc`: kompiler Rust yang mengubah berkas `.rs` menjadi berkas biner dan format lainnya."
 
 #: src/cargo/rust-ecosystem.md:8
 msgid ""
@@ -1333,6 +1333,9 @@ msgid ""
 "  `rustc` when building your project. Cargo also comes with a built-in test\n"
 "  runner which is used to execute unit tests."
 msgstr ""
+"* `cargo`: alat pembangun dan pengelola dependensi Rust. Cargo tahu cara mengunduh dependensi yang "
+"ada di <https://crates.io> dan akan meneruskannya ke rustc saat membangun proyek Anda. Cargo juga "
+"dilengkapi dengan runner tes bawaan yang digunakan untuk menjalankan tes unit."
 
 #: src/cargo/rust-ecosystem.md:13
 msgid ""
@@ -1342,13 +1345,18 @@ msgid ""
 "  library. You can have multiple versions of Rust installed at once and `rustup`\n"
 "  will let you switch between them as needed."
 msgstr ""
+"* `rustup`: penginstall dan pemutakhir toolchain Rust. Alat ini digunakan untuk menginstal dan "
+"memutakhirkan `rustc` dan `cargo` saat versi baru Rust dirilis. Selain itu, `rustup` juga dapat "
+"mengunduh dokumentasi untuk perpustakaan standar. Anda dapat memiliki beberapa versi Rust "
+"terpasang sekaligus dan rustup akan memungkinkan anda memilih di antara versi-versi tersebut "
+"sesuai kebutuhan."
 
 #: src/cargo/rust-ecosystem.md:21 src/hello-world.md:25 src/hello-world/small-example.md:27
 #: src/why-rust/runtime.md:10 src/why-rust/modern.md:21 src/basic-syntax/compound-types.md:30
 #: src/error-handling/try-operator.md:50 src/error-handling/converting-error-types-example.md:50
 #: src/concurrency/threads.md:30
 msgid "Key points:"
-msgstr ""
+msgstr "Beberapa Poin Penting:"
 
 #: src/cargo/rust-ecosystem.md:23
 msgid ""
@@ -1356,46 +1364,59 @@ msgid ""
 "  every six weeks. New releases maintain backwards compatibility with\n"
 "  old releases --- plus they enable new functionality."
 msgstr ""
+"* Rust memiliki jadwal rilis yang padat sekitar enam minggu sekali. Rilis yg baru akan "
+"mempertahankan kompatibilitas dengan rilis lama — ditambah dg fungsionalitas baru."
 
 #: src/cargo/rust-ecosystem.md:27
 msgid "* There are three release channels: \"stable\", \"beta\", and \"nightly\"."
-msgstr ""
+msgstr "* Ada tiga saluran rilis: “stable”, “beta”, dan “nightly”."
 
 #: src/cargo/rust-ecosystem.md:29
 msgid ""
 "* New features are being tested on \"nightly\", \"beta\" is what becomes\n"
 "  \"stable\" every six weeks."
 msgstr ""
+"* Fitur baru diuji pada saluran “nightly”, “beta” adalah saluran yang akan menjadi “stable” tiap "
+"enam minggu sekali."
 
 #: src/cargo/rust-ecosystem.md:32
 msgid ""
 "* Rust also has [editions]: the current edition is Rust 2021. Previous\n"
 "  editions were Rust 2015 and Rust 2018."
 msgstr ""
+"* Rust juga memiliki [edisi]: edisi saat ini adalah Rust 2021. Edisi sebelumnya adalah Rust 2015 "
+"dan Rust 2018."
 
 #: src/cargo/rust-ecosystem.md:35
 msgid ""
 "  * The editions are allowed to make backwards incompatible changes to\n"
 "    the language."
 msgstr ""
+" * Mekanise Edisi memungkinkan untuk membuat perubahan yg tidak kompatibel dg Edisi sebelumnya."
 
 #: src/cargo/rust-ecosystem.md:38
 msgid ""
 "  * To prevent breaking code, editions are opt-in: you select the\n"
 "    edition for your crate via the `Cargo.toml` file."
 msgstr ""
+" * Untuk mencegah fragmentasi kode, edisi bersifat opt-in: anda memilih edisi untuk crate anda "
+"melalui berkas `Cargo.toml`."
 
 #: src/cargo/rust-ecosystem.md:41
 msgid ""
 "  * To avoid splitting the ecosystem, Rust compilers can mix code\n"
 "    written for different editions."
 msgstr ""
+" * Agar ekosistem tidak terbagi, kompiler Rust mampu menggabungkan kode yang ditulis untuk edisi "
+"yang berbeda."
 
 #: src/cargo/rust-ecosystem.md:44
 msgid ""
 "  * Mention that it is quite rare to ever use the compiler directly not through `cargo` (most "
 "users never do)."
 msgstr ""
+" * Katakan pada peserta bahwa sangat jarang menggunakan kompiler secara langsung tanpa melalui "
+"`cargo` (sebagian besar pengguna tidak pernah melakukannya)."
 
 #: src/cargo/rust-ecosystem.md:46
 msgid ""
@@ -1409,22 +1430,31 @@ msgid ""
 "      * It is also extensible with sub command plugins as well (such as [cargo clippy]).\n"
 "  * Read more from the [official Cargo Book]"
 msgstr ""
+"  * Mungkin perlu dijelaskan bahwa Cargo sendiri adalah alat yg bagus dan komprehensif. Cargo "
+"memiliki banyak fitur canggih termasuk tetapi tidak terbatas pada:\n"
+"      * Struktur proyek/paket\n"
+"      * [ruangkerja]\n"
+"      * Pengelola/cache dependensi Runtime dan Dev\n"
+"      * [skrip pembangun]\n"
+"      * [instalasi global]\n"
+"      * Cargo juga dapat diperluas dengan plugin sub perintah (seperti [cargo clippy]).\n"
+"   * Baca lebih lanjut di [Buku Cargo resmi]"
 
 #: src/cargo/rust-ecosystem.md:55
 msgid "[editions]: https://doc.rust-lang.org/edition-guide/"
-msgstr ""
+msgstr "[edisi]: https://doc.rust-lang.org/edition-guide/"
 
 #: src/cargo/rust-ecosystem.md:57
 msgid "[workspaces]: https://doc.rust-lang.org/cargo/reference/workspaces.html"
-msgstr ""
+msgstr "[ruangkerja]: https://doc.rust-lang.org/cargo/reference/workspaces.html"
 
 #: src/cargo/rust-ecosystem.md:59
 msgid "[build scripting]: https://doc.rust-lang.org/cargo/reference/build-scripts.html"
-msgstr ""
+msgstr "[skrip pembangun]: https://doc.rust-lang.org/cargo/reference/build-scripts.html"
 
 #: src/cargo/rust-ecosystem.md:61
 msgid "[global installation]: https://doc.rust-lang.org/cargo/commands/cargo-install.html"
-msgstr ""
+msgstr "[instalasi global]: https://doc.rust-lang.org/cargo/commands/cargo-install.html"
 
 #: src/cargo/rust-ecosystem.md:63
 msgid "[cargo clippy]: https://github.com/rust-lang/rust-clippy"
@@ -1432,7 +1462,7 @@ msgstr ""
 
 #: src/cargo/rust-ecosystem.md:65
 msgid "[official Cargo Book]: https://doc.rust-lang.org/cargo/"
-msgstr ""
+msgstr "[Buku Cargo resmi]: https://doc.rust-lang.org/cargo/"
 
 #: src/cargo/code-samples.md:1
 msgid "# Code Samples in This Training"
