@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-02-19 12:23+0700\n"
+"PO-Revision-Date: 2023-02-19 12:35+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -1169,29 +1169,33 @@ msgstr ""
 
 #: src/running-the-course/translations.md:1
 msgid "# Translations"
-msgstr ""
+msgstr "# Terjemahan"
 
 #: src/running-the-course/translations.md:3
 msgid ""
 "The course has been translated into other languages by a set of wonderful\n"
 "volunteers:"
-msgstr ""
+msgstr "Kursus ini telah diterjemahkan ke dalam bahasa lain oleh sekelompok relawan yang luar biasa:"
 
 #: src/running-the-course/translations.md:6
 msgid ""
 "* [Brazilian Portuguese][pt-BR] by [@rastringer] and [@hugojacob].\n"
 "* [Korean][ko] by [@keispace], [@jiyongp] and [@jooyunghan]."
 msgstr ""
+"* [Brazilian Portuguese][pt-BR] oleh [@rastringer] dan [@hugojacob].\n"
+"* [Korean][ko] oleh [@keispace], [@jiyongp] dan [@jooyunghan]."
 
 #: src/running-the-course/translations.md:9
 msgid "Use the language picker in the top-right corner to switch between languages."
-msgstr ""
+msgstr "Gunakan pilihan bahasa di pojok kanan atas untuk mengganti bahasa."
 
 #: src/running-the-course/translations.md:11
 msgid ""
 "If you want to help with this effort, please see [our instructions] for how to\n"
 "get going. Translations are coordinated on the [issue tracker]."
 msgstr ""
+"Jika anda ingin membantu menterjemahkan, silakan baca [petunjuk kami] untuk memulai. Penterjemahan "
+"dikoordinasikan di [pelacak masalah]."
 
 #: src/running-the-course/translations.md:14
 msgid ""
@@ -1205,6 +1209,15 @@ msgid ""
 "[our instructions]: https://github.com/google/comprehensive-rust/blob/main/TRANSLATIONS.md\n"
 "[issue tracker]: https://github.com/google/comprehensive-rust/issues/282"
 msgstr ""
+"[pt-BR]: https://google.github.io/comprehensive-rust/pt-BR/\n"
+"[ko]: https://google.github.io/comprehensive-rust/ko/\n"
+"[@rastringer]: https://github.com/rastringer\n"
+"[@hugojacob]: https://github.com/hugojacob\n"
+"[@keispace]: https://github.com/keispace\n"
+"[@jiyongp]: https://github.com/jiyongp\n"
+"[@jooyunghan]: https://github.com/jooyunghan\n"
+"[petunjuk kami]: https://github.com/google/comprehensive-rust/blob/main/TRANSLATIONS.md\n"
+"[pelacak masalah]: https://github.com/google/comprehensive-rust/issues/282"
 
 #: src/cargo.md:1
 msgid "# Using Cargo"
