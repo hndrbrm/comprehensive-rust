@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-02-19 02:33+0700\n"
+"PO-Revision-Date: 2023-02-19 11:49+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -94,7 +94,7 @@ msgstr "Tipe Skalar"
 
 #: src/SUMMARY.md:28
 msgid "Compound Types"
-msgstr "Tipe Campuran"
+msgstr "Tipe Gabungan"
 
 #: src/SUMMARY.md:29
 msgid "References"
@@ -834,7 +834,7 @@ msgid ""
 "writing code for Android itself, the operating system. "
 msgstr ""
 "Perlu dicatat bahwa kursus ini tidak membahas pengembangan **aplikasi** Android menggunakan Rust, "
-"tetapi membuat kode untuk Android, sebagai sistem operasi."
+"tetapi membuat kode untuk Android, sebagai sistem operasi. "
 
 #: src/welcome.md:24
 msgid "## Non-Goals"
@@ -1106,11 +1106,11 @@ msgstr ""
 
 #: src/running-the-course/course-structure.md:1
 msgid "# Course Structure"
-msgstr ""
+msgstr "# Struktur Kursus"
 
 #: src/running-the-course/course-structure.md:5
 msgid "The course is fast paced and covers a lot of ground:"
-msgstr ""
+msgstr "Kursus ini cepat dan mencakup banyak materi:"
 
 #: src/running-the-course/course-structure.md:7
 msgid ""
@@ -1119,6 +1119,10 @@ msgid ""
 "* Day 3: Traits and generics, error handling, testing, unsafe Rust.\n"
 "* Day 4: Concurrency in Rust and interoperability with other languages"
 msgstr ""
+"* Hari 1: Rust dasar, kepemilikan, dan pengecekan pinjaman.\n"
+"* Hari 2: Jenis data gabungan, pencocokan pola, pustaka standar.\n"
+"* Hari 3: Traits dan generic, penanganan kesalahan, pengujian, unsafe Rust.\n"
+"* Hari 4: Konkurensi dalam Rust dan interoperabilitas dengan bahasa pemrograman lainnya"
 
 #: src/running-the-course/course-structure.md:12
 msgid ""
@@ -1126,6 +1130,10 @@ msgid ""
 "> which we could attempt to move to Rust? The fewer dependencies the better.\n"
 "> Parsing code would be ideal."
 msgstr ""
+"> **Latihan Hari ke-4:** Apakah anda berinteraksi dengan kode C/C++ dalam\n"
+"> proyek anda yang mungkin bisa dimigrasikan ke Rust? Semakin sedikit\n"
+"> dependensi yang digunakan, semakin baik. Parsing kode akan menjadi hal\n"
+"> yang ideal."
 
 #: src/running-the-course/course-structure.md:16
 msgid "## Format"
@@ -1136,6 +1144,8 @@ msgid ""
 "The course is meant to be very interactive and we recommend letting the\n"
 "questions drive the exploration of Rust!"
 msgstr ""
+"Kursus ini didesain agar bersifat interaktif dan kami berharap agar pertanyaan peserta menuntun "
+"pada eksplorasi Rust!"
 
 #: src/running-the-course/keyboard-shortcuts.md:1
 msgid "# Keyboard Shortcuts"
