@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-02-20 01:14+0700\n"
+"PO-Revision-Date: 2023-02-20 08:51+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -1542,7 +1542,7 @@ msgstr ""
 
 #: src/cargo/running-locally.md:1
 msgid "# Running Code Locally with Cargo"
-msgstr ""
+msgstr "# Menjalankan Kode Secara Lokal menggunakan Cargo"
 
 #: src/cargo/running-locally.md:3
 msgid ""
@@ -1551,6 +1551,10 @@ msgid ""
 "Book][1]. This should give you a working `rustc` and `cargo`. At the time of\n"
 "writing, the latest stable Rust release has these version numbers:"
 msgstr ""
+"Jika anda ingin mencoba koding pada sistem anda sendiri, maka Anda perlu menginstal Rust terlebih "
+"dahulu. Lakukan dengan mengikuti [instruksi di Buku Rust][1]. Anda akan mendapatkan `rustc` dan "
+"`cargo` yang berfungsi dg baik. Hingga saat artikel ini ditulis, rilis Rust stabil terbaru "
+"memiliki nomor versi sbb:"
 
 #: src/cargo/running-locally.md:8
 msgid ""
@@ -1567,14 +1571,18 @@ msgid ""
 "With this is in place, then follow these steps to build a Rust binary from one\n"
 "of the examples in this training:"
 msgstr ""
+"Setelah itu, ikuti langkah-langkah berikut untuk membangun aplikasi Rust dari salah satu contoh di "
+"pelatihan ini:"
 
 #: src/cargo/running-locally.md:18
 msgid "1. Click the \"Copy to clipboard\" button on the example you want to copy."
-msgstr ""
+msgstr "1. Klik tombol “Salin ke clipboard” pada contoh yang ingin anda salin."
 
 #: src/cargo/running-locally.md:20
 msgid "2. Use `cargo new exercise` to create a new `exercise/` directory for your code:"
 msgstr ""
+"2. Gunakan perintah `cargo new latihan` untuk membuat direktori baru `latihan/` yg akan menampung "
+"kode anda:"
 
 #: src/cargo/running-locally.md:22
 msgid ""
@@ -1583,10 +1591,14 @@ msgid ""
 "         Created binary (application) `exercise` package\n"
 "    ```"
 msgstr ""
+"    ```shell\n"
+"    $ cargo new latihan\n"
+"         Created binary (application) `latihan` package\n"
+"    ```"
 
 #: src/cargo/running-locally.md:27
 msgid "3. Navigate into `exercise/` and use `cargo run` to build and run your binary:"
-msgstr ""
+msgstr "3. Pergi ke direktori `latihan/` dan gunakan `cargo run` untuk membangun dan menjalankannya:"
 
 #: src/cargo/running-locally.md:29
 msgid ""
@@ -1599,12 +1611,22 @@ msgid ""
 "    Hello, world!\n"
 "    ```"
 msgstr ""
+"    ```shell\n"
+"    $ cd latihan\n"
+"    $ cargo run\n"
+"       Compiling latihan v0.1.0 (/home/mgeisler/tmp/latihan)\n"
+"        Finished dev [unoptimized + debuginfo] target(s) in 0.75s\n"
+"         Running `target/debug/latihan`\n"
+"    Hello, world!\n"
+"    ```"
 
 #: src/cargo/running-locally.md:38
 msgid ""
 "4. Replace the boiler-plate code in `src/main.rs` with your own code. For\n"
 "   example, using the example on the previous page, make `src/main.rs` look like"
 msgstr ""
+"4. Ganti kode boiler-plate di `src/main.rs` dengan kode anda. Sebagai contoh, gunakan kode pada "
+"halaman sebelumnya, edit `src/main.rs` menjadi"
 
 #: src/cargo/running-locally.md:41
 msgid ""
@@ -1614,10 +1636,15 @@ msgid ""
 "    }\n"
 "    ```"
 msgstr ""
+"    ```rust\n"
+"    fn main() {\n"
+"        println!(“Edit saya!”);\n"
+"    }\n"
+"    ```"
 
 #: src/cargo/running-locally.md:47
 msgid "5. Use `cargo run` to build and run your updated binary:"
-msgstr ""
+msgstr "5. Gunakan `cargo run` untuk membangun dan menjalankan kode yang sudah disesuaikan:"
 
 #: src/cargo/running-locally.md:49
 msgid ""
@@ -1629,6 +1656,13 @@ msgid ""
 "    Edit me!\n"
 "    ```"
 msgstr ""
+"    ```shell\n"
+"    $ cargo run\n"
+"       Compiling latihan v0.1.0 (/home/mgeisler/tmp/latihan)\n"
+"        Finished dev [unoptimized + debuginfo] target(s) in 0.24s\n"
+"         Running `target/debug/latihan`\n"
+"    Edit saya!\n"
+"    ```"
 
 #: src/cargo/running-locally.md:57
 msgid ""
@@ -1637,6 +1671,9 @@ msgid ""
 "   for a normal debug build. Use `cargo build --release` to produce an optimized\n"
 "   release build in `target/release/`."
 msgstr ""
+"6. Gunakan `cargo check` untuk memeriksa kesalahan proyek anda, gunakan `cargo build` untuk "
+"mengkompilasi tanpa menjalankan. Anda akan menemukan hasilnya di `target/debug/` secara normal. "
+"Gunakan `cargo build —release` untuk menghasilkan rilis yang optimal di `target/release/`."
 
 #: src/cargo/running-locally.md:62
 msgid ""
@@ -1644,6 +1681,9 @@ msgid ""
 "   run `cargo` commands, it will automatically download and compile missing\n"
 "   dependencies for you."
 msgstr ""
+"7. Anda dapat menambahkan dependensi untuk proyek Anda dengan mengedit `Cargo.toml`. Saat anda "
+"menjalankan perintah `cargo`, dependensi yg belum tersedia secara otomatis akan diunduh atau "
+"dikompilasi."
 
 #: src/cargo/running-locally.md:66
 msgid "[1]: https://doc.rust-lang.org/book/ch01-01-installation.html"
@@ -1655,6 +1695,8 @@ msgid ""
 "local editor. It will make their life easier since they will have a\n"
 "normal development environment."
 msgstr ""
+"Usahakan agar peserta kelas menginstal Cargo dan menggunakan editor lokal. Hal ini akan memudahkan "
+"mereka selanjutnya karena memiliki suatu lingkungan pengembangan yg sehat."
 
 #: src/welcome-day-1.md:1
 msgid "# Welcome to Day 1"
