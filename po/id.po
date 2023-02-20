@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-02-21 00:07+0700\n"
+"PO-Revision-Date: 2023-02-21 00:34+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -1851,13 +1851,15 @@ msgstr ""
 
 #: src/hello-world.md:1
 msgid "# Hello World!"
-msgstr ""
+msgstr "# Halo Dunia!"
 
 #: src/hello-world.md:3
 msgid ""
 "Let us jump into the simplest possible Rust program, a classic Hello World\n"
 "program:"
 msgstr ""
+"Mari kita langsung bahas program Rust yang paling sederhana, yakni sebuah program klasik Halo "
+"Dunia:"
 
 #: src/hello-world.md:6
 msgid ""
@@ -1867,10 +1869,15 @@ msgid ""
 "}\n"
 "```"
 msgstr ""
+"```rust\n"
+"fn main() {\n"
+"    println!(“Halo 🌍!”);\n"
+"}\n"
+"```"
 
 #: src/hello-world.md:12
 msgid "What you see:"
-msgstr ""
+msgstr "Apa yang anda lihat:"
 
 #: src/hello-world.md:14
 msgid ""
@@ -1880,12 +1887,20 @@ msgid ""
 "* Rust has hygienic macros, `println!` is an example of this.\n"
 "* Rust strings are UTF-8 encoded and can contain any Unicode character."
 msgstr ""
+"* Fungsi didefinisikan dengan kata kunci `fn`.\n"
+"* Blok kode diapit oleh kurung kurawal seperti pada C dan C++.\n"
+"* Fungsi `main` adalah titik masuk dari program.\n"
+"* Rust memiliki makro yang rapi, `println!` adalah contohnya.\n"
+"* Tulisan Rust menggunakan pengkodean UTF-8 dan dapat berisi karakter Unicode apapun."
 
 #: src/hello-world.md:22
 msgid ""
 "This slide tries to make the students comfortable with Rust code. They will see\n"
 "a ton of it over the next four days so we start small with something familiar."
 msgstr ""
+"Slide ini mencoba membuat peserta merasa nyaman dengan kode Rust. Mereka akan melihat banyak kode "
+"Rust dalam empat hari ke depan, jadi sekarang kita mulai dengan sesuatu yang familiar dan "
+"sederhana."
 
 #: src/hello-world.md:27
 msgid ""
@@ -1893,16 +1908,20 @@ msgid ""
 "  imperative (not functional) and it doesn't try to reinvent things unless\n"
 "  absolutely necessary."
 msgstr ""
+"* Rust mirip dengan bahasa pemrograman lain seperti C/C++/Java, merupakan bahasa imperatif (bukan "
+"fungsional) dan tidak berusaha membuat kembali hal-hal yg sudah ada kecuali jika mutlak diperlukan."
 
 #: src/hello-world.md:31
 msgid "* Rust is modern with full support for things like Unicode."
-msgstr ""
+msgstr "* Rust adalah bahasa modern yang sepenuhnya mendukung hal-hal seperti Unicode."
 
 #: src/hello-world.md:33
 msgid ""
 "* Rust uses macros for situations where you want to have a variable number of\n"
 "  arguments (no function [overloading](basic-syntax/functions-interlude.md))."
 msgstr ""
+"* Rust menggunakan makro untuk situasi di mana anda ingin memiliki jumlah argumen yang bervariasi "
+"(tanpa [overloading](basic-syntax/functions-interlude.md) fungsi)."
 
 #: src/hello-world/small-example.md:1
 msgid "# Small Example"
