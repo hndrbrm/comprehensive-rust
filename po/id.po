@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-02-20 08:51+0700\n"
+"PO-Revision-Date: 2023-02-20 23:40+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -1700,33 +1700,39 @@ msgstr ""
 
 #: src/welcome-day-1.md:1
 msgid "# Welcome to Day 1"
-msgstr ""
+msgstr "# Selamat datang di Hari Pertama"
 
 #: src/welcome-day-1.md:3
 msgid ""
 "This is the first day of Comprehensive Rust. We will cover a lot of ground\n"
 "today:"
 msgstr ""
+"Hari ini adalah hari pertama dari Comprehensive Rust. Kita akan mempelajari beberapa hal dasar "
+"pada hari ini:"
 
 #: src/welcome-day-1.md:6
 msgid ""
 "* Basic Rust syntax: variables, scalar and compound types, enums, structs,\n"
 "  references, functions, and methods."
 msgstr ""
+"* Dasar-dasar sintaks Rust: variabel, tipe skalar dan gabungan, enum, struct, reference, fungsi, "
+"dan metode."
 
 #: src/welcome-day-1.md:9
 msgid ""
 "* Memory management: stack vs heap, manual memory management, scope-based memory\n"
 "  management, and garbage collection."
 msgstr ""
+"* Pengelolaan Memori: stack vs heap, pengelolaan memori secara manual, pengelolaan memori berbasis "
+"cakupan, dan garbage collection."
 
 #: src/welcome-day-1.md:12
 msgid "* Ownership: move semantics, copying and cloning, borrowing, and lifetimes."
-msgstr ""
+msgstr "* Kepemilikan: perpindahan semantik, penyalinan dan penggandaan, peminjaman, dan masa hidup."
 
 #: src/welcome-day-1.md:16
 msgid "Please remind the students that:"
-msgstr ""
+msgstr "Silakan ingatkan peserta bahwa:"
 
 #: src/welcome-day-1.md:18
 msgid ""
@@ -1741,6 +1747,15 @@ msgid ""
 "    that the slides are just a support and you are free to skip them as you\n"
 "    like."
 msgstr ""
+"* Peserta sebaiknya segera mengajukan pertanyaan tanpa perlu menundanya hingga akhir.\n"
+"* Kursus ini dirancang agar interaktif dan diskusi peserta sangat diharapkan!\n"
+"  * Sebagai instruktur, anda harus menjaga agar diskusi tetap relevan, yakni, dg membandingkan "
+"antara Rust dengan bahasa pemrograman lain. Terkadang sulit untuk menemukan diskusi yg seimbang, "
+"namun pada dasarnya diskusi diperbolehkan karena kursus ini dirancang untuk melibatkan peserta "
+"daripada komunikasi satu arah.\n"
+"* Terkadang pertanyaan peserta mengarah pada hal-hal yang belum dibahas di dalam slide.\n"
+"  * Hal ini wajar! Pengulangan merupakan bagian penting dari suatu pembelajaran. Ingat bahwa tugas "
+"slide hanyalah membantu dan anda bebas untuk melewatinya sesuai keinginan."
 
 #: src/welcome-day-1.md:29
 msgid ""
@@ -1748,24 +1763,33 @@ msgid ""
 "about the famous borrow checker. The way Rust handles memory is a major feature\n"
 "and we should show students this right away."
 msgstr ""
+"Pada hari pertama, peserta diterangkan _secukupnya_ mengenai konsep Rust, sehingga mereka mampu "
+"berbicara mengenai borrow checker yang terkenal itu. Bagaimana Rust menangani memori merupakan "
+"salah satu fitur utama dan seharusnya kita terangkan pada peserta sesegera mungkin."
 
 #: src/welcome-day-1.md:33
 msgid ""
 "If you're teaching this in a classroom, this is a good place to go over the\n"
 "schedule. We suggest splitting the day into two parts (following the slides):"
 msgstr ""
+"Jika anda mengajarkan slide ini di kelas, maka sekarang adalah saat yg tepat untuk membahas jadwal "
+"kursus. Kami sarankan untuk membagi hari menjadi dua bagian (mengikuti slide):"
 
 #: src/welcome-day-1.md:36
 msgid ""
 "* Morning: 9:00 to 12:00,\n"
 "* Afternoon: 13:00 to 16:00."
 msgstr ""
+"* Pagi: 9:00 hingga 12:00,\n"
+"* Siang: 13:00 hingga 16:00."
 
 #: src/welcome-day-1.md:39
 msgid ""
 "You can of course adjust this as necessary. Please make sure to include breaks,\n"
 "we recommend a break every hour!"
 msgstr ""
+"Tentu saja, anda dapat menyesuaikan jadwal ini sesuai kebutuhan. Pastikan untuk menyertakan waktu "
+"istirahat juga. Kami sarankan agar istirahat setiap satu jam sekali!"
 
 #: src/welcome-day-1/what-is-rust.md:1
 msgid "# What is Rust?"
