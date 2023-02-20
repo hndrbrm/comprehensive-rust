@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-02-20 23:40+0700\n"
+"PO-Revision-Date: 2023-02-21 00:07+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -1793,11 +1793,11 @@ msgstr ""
 
 #: src/welcome-day-1/what-is-rust.md:1
 msgid "# What is Rust?"
-msgstr ""
+msgstr "# Apa itu Rust?"
 
 #: src/welcome-day-1/what-is-rust.md:3
 msgid "Rust is a new programming language which had its [1.0 release in 2015][1]:"
-msgstr ""
+msgstr "Rust adalah bahasa pemrograman baru yang telah [rilis 1.0 pada 2015][1]:"
 
 #: src/welcome-day-1/what-is-rust.md:5
 msgid ""
@@ -1814,10 +1814,22 @@ msgid ""
 "  * desktops,\n"
 "  * servers."
 msgstr ""
+"* Rust adalah bahasa yang dikompilasi secara statis yg memiliki peran seperti C++\n"
+"  * `rustc` menggunakan LLVM sebagai backend-nya.\n"
+"* Rust mendukung banyak [platform dan arsitektur](https://doc.rust-lang.org/nightly/rustc/platform-"
+"support.html):\n"
+"  * x86, ARM, WebAssembly, …\n"
+"  * Linux, Mac, Windows, …\n"
+"* Rust digunakan untuk berbagai jenis perangkat:\n"
+"  * firmware dan boot loader,\n"
+"  * layar pintar,\n"
+"  * telepon seluler,\n"
+"  * desktop,\n"
+"  * server."
 
 #: src/welcome-day-1/what-is-rust.md:21
 msgid "Rust fits in the same area as C++:"
-msgstr ""
+msgstr "Rust cocok digunakan pada area yang sama dg C++:"
 
 #: src/welcome-day-1/what-is-rust.md:23
 msgid ""
@@ -1827,6 +1839,11 @@ msgid ""
 "* Has no runtime or garbage collection.\n"
 "* Focuses on reliability and safety without sacrificing performance."
 msgstr ""
+"* Sangat fleksibel.\n"
+"* Tingkat kontrol yang tinggi.\n"
+"* Dapat diskalakan untuk perangkat yang terbatas seperti telepon seluler.\n"
+"* Tidak memiliki garbage collection.\n"
+"* Fokus pada kehandalan dan keamanan tanpa mengorbankan performansi."
 
 #: src/welcome-day-1/what-is-rust.md:31
 msgid "[1]: https://blog.rust-lang.org/2015/05/15/Rust-1.0.html"
