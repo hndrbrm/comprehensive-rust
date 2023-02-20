@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-02-21 00:34+0700\n"
+"PO-Revision-Date: 2023-02-21 01:20+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -1925,11 +1925,11 @@ msgstr ""
 
 #: src/hello-world/small-example.md:1
 msgid "# Small Example"
-msgstr ""
+msgstr "# Contoh Sederhana"
 
 #: src/hello-world/small-example.md:3
 msgid "Here is a small example program in Rust:"
-msgstr ""
+msgstr "Berikut adalah contoh program sederhana di Rust:"
 
 #: src/hello-world/small-example.md:5
 msgid ""
@@ -1949,6 +1949,21 @@ msgid ""
 "}\n"
 "```"
 msgstr ""
+"```rust,editable\n"
+"fn main() {              // Titik masuk program\n"
+"    let mut x: i32 = 6;  // Binding variabel mutable\n"
+"    print!(“{x}”);       // Makro untuk mencetak, seperti printf\n"
+"    while x != 1 {       // Tanpa kurung disekitar ekspresi\n"
+"        if x % 2 == 0 {  // Matematika mirip dg bahasa lain\n"
+"            x = x / 2;\n"
+"        } else {\n"
+"            x = 3 * x + 1;\n"
+"        }\n"
+"        print!(“ -> {x}”);\n"
+"    }\n"
+"    println!();\n"
+"}\n"
+"```"
 
 #: src/hello-world/small-example.md:23
 msgid ""
@@ -1956,28 +1971,35 @@ msgid ""
 "always end, but this is not yet proved. Edit the code and play with different\n"
 "inputs."
 msgstr ""
+"Kode tersebut mengimplementasikan hipotesis Collatz: dikatakan bahwa loop akan selalu berakhir, "
+"tetapi kesimpulan tsb belum terbukti. Edit kode dan ganti dengan input yang berbeda."
 
 #: src/hello-world/small-example.md:29
 msgid ""
 "* Explain that all variables are statically typed. Try removing `i32` to trigger\n"
 "  type inference. Try with `i8` instead and trigger a runtime integer overflow."
 msgstr ""
+"* Jelaskan bahwa semua variabel di Rust memiliki tipe data yang statis. Coba hilangkan `i32` untuk "
+"mengaktifkan inferensi tipe data. Cobalah dengan `i8` sebagai pengganti dan aktifkan overflow "
+"integer ketika jalan."
 
 #: src/hello-world/small-example.md:32
 msgid "* Change `let mut x` to `let x`, discuss the compiler error."
-msgstr ""
+msgstr "* Ubah `let mut x` menjadi `let x`, diskusikan error dari kompiler."
 
 #: src/hello-world/small-example.md:34
 msgid ""
 "* Show how `print!` gives a compilation error if the arguments don't match the\n"
 "  format string."
-msgstr ""
+msgstr "* Tunjukkan bagaimana `print!` mengeluarkan kesalahan kompilasi ketika argumen bukan string."
 
 #: src/hello-world/small-example.md:37
 msgid ""
 "* Show how you need to use `{}` as a placeholder if you want to print an\n"
 "  expression which is more complex than just a single variable."
 msgstr ""
+"* Tunjukkan bagaimana menggunakan `{}` sebagai placeholder jika ingin mencetak suatu ekspresi yang "
+"lebih kompleks daripada hanya satu variabel saja."
 
 #: src/hello-world/small-example.md:40
 msgid ""
@@ -1985,6 +2007,9 @@ msgid ""
 "  which has the rules of the formatting mini-language. It's important that the\n"
 "  students become familiar with searching in the standard library."
 msgstr ""
+"* Terangkan kepada peserta mengenai pustaka standar, dan cara mencari `std::fmt` yang berisi "
+"aturan mengenai format bahasa. Penting bagi peserta untuk terbiasa dengan pencarian di pustaka "
+"standar."
 
 #: src/why-rust.md:1
 msgid "# Why Rust?"
