@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-02-21 01:20+0700\n"
+"PO-Revision-Date: 2023-02-21 07:55+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -2013,11 +2013,11 @@ msgstr ""
 
 #: src/why-rust.md:1
 msgid "# Why Rust?"
-msgstr ""
+msgstr "# Kenapa Rust?"
 
 #: src/why-rust.md:3
 msgid "Some unique selling points of Rust:"
-msgstr ""
+msgstr "Beberapa poin menarik dari Rust:"
 
 #: src/why-rust.md:5
 msgid ""
@@ -2025,12 +2025,17 @@ msgid ""
 "* Lack of undefined runtime behavior.\n"
 "* Modern language features."
 msgstr ""
+"* Jaminan keamanan memori pada saat kompilasi.\n"
+"* Jarang menemui sesuatu yg tak terduga ketika aplikasi berjalan.\n"
+"* Fitur bahasa modern."
 
 #: src/why-rust.md:11
 msgid ""
 "Make sure to ask the class which languages they have experience with. Depending\n"
 "on the answer you can highlight different features of Rust:"
 msgstr ""
+"Tanyakan peserta mengenai pengalaman mereka dengan bahasa pemrograman lain. Bergantung pada "
+"jawaban yang diberikan, anda dapat menyoroti fitur-fitur yang berbeda pada Rust:"
 
 #: src/why-rust.md:14
 msgid ""
@@ -2039,6 +2044,10 @@ msgid ""
 "  have the memory unsafety issues. In addition, you get a modern language with\n"
 "  constructs like pattern matching and built-in dependency management."
 msgstr ""
+"* Pengalaman dengan C atau C++: Rust menghilangkan kesalahan _runtime error_ menggunakan borrow "
+"checker. Anda memperoleh performa seperti C dan C++, tetapi tidak mengalami issue ketidakamanan "
+"memori. Selain itu, anda memperoleh bahasa modern dengan konstruksi seperti pattern matching dan "
+"pengelola dependensi bawaan."
 
 #: src/why-rust.md:19
 msgid ""
@@ -2047,6 +2056,10 @@ msgid ""
 "  you get fast and predictable performance like C and C++ (no garbage collector)\n"
 "  as well as access to low-level hardware (should you need it)"
 msgstr ""
+"* Mereka yang memiliki pengalaman dengan Java, Go, Python, JavaScript…: Mereka mendapatkan "
+"keamanan memori yang sama dengan bahasa-bahasa tersebut, ditambah dengan kenyamanan bahasa tingkat "
+"tinggi serupa. Selain itu, mereka memperoleh performa seperti di C dan C++ (tanpa garbage "
+"collector), serta akses ke perangkat keras tingkat rendah (jika mereka membutuhkannya)."
 
 #: src/why-rust/compile-time.md:1
 msgid "# Compile Time Guarantees"
