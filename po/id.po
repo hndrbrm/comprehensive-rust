@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-02-21 07:55+0700\n"
+"PO-Revision-Date: 2023-02-21 08:38+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -2063,11 +2063,11 @@ msgstr ""
 
 #: src/why-rust/compile-time.md:1
 msgid "# Compile Time Guarantees"
-msgstr ""
+msgstr "# Jaminan Ketika Kompilasi"
 
 #: src/why-rust/compile-time.md:3
 msgid "Static memory management at compile time:"
-msgstr ""
+msgstr "Pengelola memori statik pada saat kompilasi:"
 
 #: src/why-rust/compile-time.md:5
 msgid ""
@@ -2080,12 +2080,20 @@ msgid ""
 "* No data races between threads.\n"
 "* No iterator invalidation."
 msgstr ""
+"* Tidak ada variabel yang tidak terinisialisasi.\n"
+"* Tidak ada kebocoran memori (_sebagian besar_, silakan lihat catatan).\n"
+"* Tidak ada pembebasan memori ganda.\n"
+"* Tidak ada penggunaan memori setelah dibebaskan.\n"
+"* Tidak ada pointer `NULL`.\n"
+"* Tidak ada pengunci mutex yang terlupakan.\n"
+"* Tidak ada data race antara thread.\n"
+"* Tidak ada iterator invalidation."
 
 #: src/why-rust/compile-time.md:16
 msgid ""
 "It is possible to produce memory leaks in (safe) Rust. Some examples\n"
 "are:"
-msgstr ""
+msgstr "Kebocoran memori di Rust memungkinkan. Berikut beberapa contohnya:"
 
 #: src/why-rust/compile-time.md:19
 msgid ""
@@ -2098,12 +2106,21 @@ msgid ""
 "* In fact, some will consider infinitely populating a collection a memory\n"
 "  leak and Rust does not protect from those."
 msgstr ""
+"* Anda dapat menggunakan [`Box::leak`] agar terjadi kebocoran pointer. Penggunaan ini bisa untuk "
+"mendapatkan variabel statis yang diinisialisasi dan diukur ketika dijalankan.\n"
+"* Anda bisa menggunakan [`std::mem::forget`] untuk membuat kompiler “lupa” terhadap suatu nilai "
+"(artinya destructor tidak pernah dijalankan).\n"
+"* Anda bisa juga membuat [reference cycle] dengan `Rc` atau `Arc`.\n"
+"* Pada dasarnya, seseorang dapat dg sengaja mengisi sekelompok memori yg bocor dan Rust tidak "
+"mengamankannya."
 
 #: src/why-rust/compile-time.md:28
 msgid ""
 "For the purpose of this course, \"No memory leaks\" should be understood\n"
 "as \"Pretty much no *accidental* memory leaks\"."
 msgstr ""
+"Didalam kursus ini istilah, “Tidak ada kebocoran memori” harus dipahami sebagai “Hampir tidak ada "
+"kebocoran memori yang *tidak disengaja*”."
 
 #: src/why-rust/compile-time.md:31
 msgid ""
