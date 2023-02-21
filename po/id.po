@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-02-21 08:38+0700\n"
+"PO-Revision-Date: 2023-02-21 08:52+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -78,7 +78,7 @@ msgstr "Jaminan Ketika Kompilasi"
 
 #: src/SUMMARY.md:24
 msgid "Runtime Guarantees"
-msgstr "Jaminan Ketika Dijalankan"
+msgstr "Jaminan Saat Dijalankan"
 
 #: src/SUMMARY.md:25
 msgid "Modern Features"
@@ -2131,17 +2131,19 @@ msgstr ""
 
 #: src/why-rust/runtime.md:1
 msgid "# Runtime Guarantees"
-msgstr ""
+msgstr "# Jaminan Saat Dijalankan"
 
 #: src/why-rust/runtime.md:3
 msgid "No undefined behavior at runtime:"
-msgstr ""
+msgstr "Tidak ada perilaku tak terduga ketika berjalan:"
 
 #: src/why-rust/runtime.md:5
 msgid ""
 "* Array access is bounds checked.\n"
 "* Integer overflow is defined."
 msgstr ""
+"* Akses array dicek batasannya.\n"
+"* Integer overflow didefinisikan."
 
 #: src/why-rust/runtime.md:12
 msgid ""
@@ -2150,6 +2152,10 @@ msgid ""
 "  semantics. By default, you get panics in debug mode (`cargo build`)\n"
 "  and wrap-around in release mode (`cargo build --release`)."
 msgstr ""
+"* Overflow integer didefinisikan menggunakan flag pada saat kompilasi. Pilihannya\n"
+"antara Panik (program dg kontrol crash) atau Bungkus Semantik. Secara\n"
+"default, anda mendapatkan Panik dalam mode debug (`cargo build`) dan Bungkus Semantik\n"
+"dalam mode rilis (`cargo build —release`)."
 
 #: src/why-rust/runtime.md:17
 msgid ""
@@ -2158,6 +2164,9 @@ msgid ""
 "  `unsafe` allows you to call functions such as `slice::get_unchecked`\n"
 "  which does not do bounds checking."
 msgstr ""
+"* Pengecekan Batas tidak bisa dinonaktifkan dengan pengaturan flag kompiler. Pengecekan batas juga "
+"tidak bisa dimatikan dengan kata kunci `unsafe`. Namun, dengan menggunakan `unsafe`, anda dapat "
+"memanggil fungsi seperti `slice::get_unchecked` dimana tidak melakukan pengecekan batas."
 
 #: src/why-rust/modern.md:1
 msgid "# Modern Features"
