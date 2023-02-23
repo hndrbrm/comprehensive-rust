@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-02-21 08:52+0700\n"
+"PO-Revision-Date: 2023-02-23 09:06+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -2170,15 +2170,15 @@ msgstr ""
 
 #: src/why-rust/modern.md:1
 msgid "# Modern Features"
-msgstr ""
+msgstr "# Fitur Modern"
 
 #: src/why-rust/modern.md:3
 msgid "Rust is built with all the experience gained in the last 40 years."
-msgstr ""
+msgstr "Rust dibuat berdasarkan pengalaman yang diperoleh selama 40 tahun terakhir."
 
 #: src/why-rust/modern.md:5
 msgid "## Language Features"
-msgstr ""
+msgstr "## Fitur Bahasa"
 
 #: src/why-rust/modern.md:7
 msgid ""
@@ -2187,10 +2187,14 @@ msgid ""
 "* No overhead FFI.\n"
 "* Zero-cost abstractions."
 msgstr ""
+"* Enum dan pattern matching.\n"
+"* Generik.\n"
+"* FFI tanpa overhead.\n"
+"* Abstraksi tanpa kompleksitas."
 
 #: src/why-rust/modern.md:12
 msgid "## Tooling"
-msgstr ""
+msgstr "## Peralatan"
 
 #: src/why-rust/modern.md:14
 msgid ""
@@ -2199,6 +2203,10 @@ msgid ""
 "* Built-in support for testing.\n"
 "* Excellent Language Server Protocol support."
 msgstr ""
+"* Pesan kesalahan kompilasi yang jelas.\n"
+"* Pengelola dependensi bawaan.\n"
+"* Dukungan terhadap Pengujian.\n"
+"* Dukungan terhadap Language Server Protocol."
 
 #: src/why-rust/modern.md:23
 msgid ""
@@ -2207,6 +2215,10 @@ msgid ""
 "  writing a loop using `for` should result in roughly the same low level\n"
 "  instructions as using the `.iter().fold()` construct."
 msgstr ""
+"* Abstraksi sederhana, mirip dengan C++, artinya anda tidak perlu bersusahpayah\n"
+"untuk membuat pemrograman tingkat tinggi dengan memori atau CPU. Misalnya,\n"
+"menulis pengulangan menggunakan `for` akan menghasilkan instruksi tingkat rendah\n"
+"yang kurang lebih sama dg apabila kita menggunakan `.iter().fold()`."
 
 #: src/why-rust/modern.md:28
 msgid ""
@@ -2214,6 +2226,9 @@ msgid ""
 "  known as 'sum types', which allow the type system to express things like\n"
 "  `Option<T>` and `Result<T, E>`."
 msgstr ""
+"* Perlu digarisbawahi bahwa enum di Rust adalah ‘Algebraic Data Types’, yang juga dikenal sebagai "
+"‘sum types’, yang memungkinkan tipe tsb untuk mengekspresikan hal-hal seperti `Option<T>` dan "
+"`Result<T, E>`."
 
 #: src/why-rust/modern.md:32
 msgid ""
@@ -2222,6 +2237,10 @@ msgid ""
 "  talkative than other compilers. It will often provide you with _actionable_\n"
 "  feedback, ready to copy-paste into your code."
 msgstr ""
+"* Ingatkan peserta untuk senantiasa membaca pesan error --- kebanyakan pengembang terbiasa "
+"mengabaikan keluaran kompiler yang panjang. Kompiler Rust secara signifikan lebih banyak berbicara "
+"daripada kompiler lain. Kompiler Rust sering memberikan umpan balik yang perlu diambil _tindakan_, "
+"dan siap untuk di salin-tempel kan ke kode anda."
 
 #: src/why-rust/modern.md:37
 msgid ""
@@ -2229,6 +2248,8 @@ msgid ""
 "  and Go. Rust does not come with several things you might consider standard and\n"
 "  essential:"
 msgstr ""
+"* Pustaka Standar Rust lebih kecil daripada bahasa pemrograman seperti Java, Python, dan Go. Rust "
+"tidak dilengkapi dengan beberapa hal yang mungkin anda anggap standar dan penting:"
 
 #: src/why-rust/modern.md:41
 msgid ""
@@ -2236,6 +2257,9 @@ msgid ""
 "  * support for SSL or TLS, but see [rusttls].\n"
 "  * support for JSON, but see [serde_json]."
 msgstr ""
+"  * generator bilangan acak, silakan lihat [rand].\n"
+"  * dukungan untuk SSL atau TLS, silakan lihat [rusttls].\n"
+"  * dukungan untuk JSON, silakan lihat [serde_json]."
 
 #: src/why-rust/modern.md:45
 msgid ""
@@ -2244,6 +2268,9 @@ msgid ""
 "  community is still working on finding the best solution --- and perhaps there\n"
 "  isn't a single \"best solution\" for some of these things."
 msgstr ""
+"  Hal ini disebabkan karena fungsionalitas pada pustaka standar tidak dapat diabaikan, harus benar-"
+"benar stabil. Untuk beberapa contoh diatas, komunitas Rust masih mencari solusi terbaiknya --- "
+"bahkan mungkin tidak ada satu “solusi terbaik” untuk beberapa hal tsb."
 
 #: src/why-rust/modern.md:50
 msgid ""
@@ -2251,6 +2278,8 @@ msgid ""
 "  it trivial to download and compile third-party crates. A consequence of this\n"
 "  is that the standard library can be smaller."
 msgstr ""
+"  Rust dilengkapi dengan pengelola paket bawaan yakni Cargo sehingga kita mudah untuk mengunduh "
+"dan mengkompilasi suatu crate. Karenanya ukuran pustaka standar bisa menjadi lebih kecil."
 
 #: src/why-rust/modern.md:54
 msgid ""
@@ -2261,6 +2290,11 @@ msgid ""
 "* [rust-analyzer] is a well supported LSP implementation used in major\n"
 "  IDEs and text editors."
 msgstr ""
+"Mencari sebuah crate yg bagus tidaklah mudah. Situs seperti <https://lib.rs/> dapat membantu kita "
+"dg cara membandingkan metrik crate untuk menemukan crate yang bagus dan tepercaya.\n"
+"\n"
+"* [rust-analyzer] merupakan implementasi LSP yang didukung dengan baik di sebagian besar IDE dan "
+"aplikasi editor."
 
 #: src/why-rust/modern.md:61
 msgid ""
