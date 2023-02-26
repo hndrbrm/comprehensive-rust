@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-02-23 23:25+0700\n"
+"PO-Revision-Date: 2023-02-26 11:35+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -2386,7 +2386,7 @@ msgstr ""
 
 #: src/basic-syntax/compound-types.md:1
 msgid "# Compound Types"
-msgstr ""
+msgstr "# Tipe Gabungan"
 
 #: src/basic-syntax/compound-types.md:3
 msgid ""
@@ -2398,7 +2398,7 @@ msgstr ""
 
 #: src/basic-syntax/compound-types.md:8
 msgid "Array assignment and access:"
-msgstr ""
+msgstr "Akses dan pengisian Array:"
 
 #: src/basic-syntax/compound-types.md:10
 msgid ""
@@ -2413,7 +2413,7 @@ msgstr ""
 
 #: src/basic-syntax/compound-types.md:18
 msgid "Tuple assignment and access:"
-msgstr ""
+msgstr "Akses dan pengisian Tuple:"
 
 #: src/basic-syntax/compound-types.md:20
 msgid ""
@@ -2428,7 +2428,7 @@ msgstr ""
 
 #: src/basic-syntax/compound-types.md:32
 msgid "Arrays:"
-msgstr ""
+msgstr "Array:"
 
 #: src/basic-syntax/compound-types.md:34
 msgid ""
@@ -2436,10 +2436,14 @@ msgid ""
 "  Note that the length of the array is *part of its type*, which means that `[u8; 3]` and\n"
 "  `[u8; 4]` are considered two different types."
 msgstr ""
+"* Array memiliki jenis elemen yang semuanya sama, yakni `T`, dan panjang, `N`, yang ditentukan "
+"ketika kompilasi.\n"
+"Perlu dicatat bahwa panjang array merupakan *bagian dari tipe*, artinya `[u8; 3]` dan\n"
+"`[u8; 4]` dianggap sebagai dua buah tipe yang berbeda."
 
 #: src/basic-syntax/compound-types.md:38
 msgid "* We can use literals to assign values to arrays."
-msgstr ""
+msgstr "* Kita dapat menggunakan literal untuk memberikan nilai pada suatu array."
 
 #: src/basic-syntax/compound-types.md:40
 msgid ""
@@ -2448,27 +2452,34 @@ msgid ""
 "  could also have used `{a}` and `{a:?}` without specifying the value after the\n"
 "  format string."
 msgstr ""
+"* Di dalam fungsi main, pernyataan print menggunakan implementasi debug dengan parameter format `?"
+"`: `{}` memberikan keluaran default, {:?} memberikan keluaran debug. Kita juga bisa menggunakan "
+"secara langsung `{a}` dan `{a:?}` tanpa memasukkan variabel tersebut setelah format."
 
 #: src/basic-syntax/compound-types.md:45
 msgid "* Adding `#`, eg `{a:#?}`, invokes a \"pretty printing\" format, which can be easier to read."
 msgstr ""
+"* Dengan menambahkan `#`, seperti `{a:#?}`, akan menghasilkan \"cetakan rapi\", yang lebih mudah "
+"dibaca."
 
 #: src/basic-syntax/compound-types.md:47
 msgid "Tuples:"
-msgstr ""
+msgstr "Tuple:"
 
 #: src/basic-syntax/compound-types.md:49
 msgid "* Like arrays, tuples have a fixed length."
-msgstr ""
+msgstr "* Seperti array, tuple memiliki ukuran yg tetap."
 
 #: src/basic-syntax/compound-types.md:51
 msgid "* Tuples group together values of different types into a compound type."
-msgstr ""
+msgstr "* Tuple mengumpulkan tipe-tipe yang berbeda menjadi sebuah tipe gabungan."
 
 #: src/basic-syntax/compound-types.md:53
 msgid ""
 "* Fields of a tuple can be accessed by the period and the index of the value, e.g. `t.0`, `t.1`."
 msgstr ""
+"* Field dari suatu tuple dapat diakses menggunakan tanda titik dan nomor indeks, misalnya `t.0`, "
+"`t.1`."
 
 #: src/basic-syntax/compound-types.md:55
 msgid ""
@@ -2479,6 +2490,12 @@ msgid ""
 "    * You can think of it as `void` that can be familiar to you from other \n"
 "      programming languages."
 msgstr ""
+"* Tuple kosong `()` juga dikenal sebagai \"tipe satuan\". Adalah sebuah tipe, dan sekaligus satu-"
+"satunya nilai dari tipe tersebut - artinya baik tipe dan nilainya dinyatakan sebagai `()`.\n"
+"  Digunakan untuk menunjukkan, bahwa sebuah fungsi atau ekspresi tidak memiliki nilai "
+"pengembalian, seperti yang akan kita lihat pada slide selanjutnya.\n"
+"    * Anda dapat memanggapnya sebagai `void` yang mungkin familiar bagi anda dari bahasa "
+"pemrograman lain."
 
 #: src/basic-syntax/references.md:1
 msgid "# References"
