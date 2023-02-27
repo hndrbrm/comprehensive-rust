@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-02-26 11:35+0700\n"
+"PO-Revision-Date: 2023-02-27 23:36+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -98,7 +98,7 @@ msgstr "Tipe Gabungan"
 
 #: src/SUMMARY.md:29
 msgid "References"
-msgstr "Referensi"
+msgstr "Reference"
 
 #: src/SUMMARY.md:30
 msgid "Dangling References"
@@ -2499,11 +2499,11 @@ msgstr ""
 
 #: src/basic-syntax/references.md:1
 msgid "# References"
-msgstr ""
+msgstr "# Reference"
 
 #: src/basic-syntax/references.md:3
 msgid "Like C++, Rust has references:"
-msgstr ""
+msgstr "Seperti C++, Rust juga memiliki reference:"
 
 #: src/basic-syntax/references.md:5
 msgid ""
@@ -2519,7 +2519,7 @@ msgstr ""
 
 #: src/basic-syntax/references.md:14
 msgid "Some notes:"
-msgstr ""
+msgstr "Catatan:"
 
 #: src/basic-syntax/references.md:16
 msgid ""
@@ -2528,12 +2528,18 @@ msgid ""
 "  methods (try `ref_x.count_ones()`).\n"
 "* References that are declared as `mut` can be bound to different values over their lifetime."
 msgstr ""
+"* Kita harus dereference `ref_x` ketika memasukkan nilai, mirip dengan pointer di C dan C++.\n"
+"* Untuk beberapa kasus Rust akan melakukan dereference secara otomatis, terutama ketika memanggil "
+"metode (silakan coba `ref_x.count_ones()`).\n"
+"* Reference yang dinyatakan sebagai `mut` dapat diisi dg nilai yang berbeda."
 
 #: src/basic-syntax/references.md:21
 msgid ""
 "<details>\n"
 "Key points:"
 msgstr ""
+"<details>\n"
+"Poin Kunci:"
 
 #: src/basic-syntax/references.md:24
 msgid ""
@@ -2541,6 +2547,9 @@ msgid ""
 "  &mut i32`. The first one represents a mutable reference which can be bound to\n"
 "  different values, while the second represents a reference to a mutable value."
 msgstr ""
+"* Pastikan mengetahui perbedaan antara `let mut ref_x: &i32` dan `let ref_x: &mut i32`. Yang "
+"pertama adalah reference yang bisa dihubungkan ke berbagai nilai, sedangkan yang kedua adalah "
+"reference yg dihubungkan ke satu nilai yang dapat berubah."
 
 #: src/basic-syntax/references-dangling.md:1
 msgid "# Dangling References"
@@ -2548,7 +2557,7 @@ msgstr ""
 
 #: src/basic-syntax/references-dangling.md:3
 msgid "Rust will statically forbid dangling references:"
-msgstr ""
+msgstr "Rust secara statik melarang penggunaan Dangling Reference:"
 
 #: src/basic-syntax/references-dangling.md:5
 msgid ""
@@ -2571,6 +2580,9 @@ msgid ""
 "  enough.\n"
 "* We will talk more about borrowing when we get to ownership."
 msgstr ""
+"* Suatu reference dikatakan \"meminjam\" nilai yg dirujuknya.\n"
+"* Rust melacak semua reference untuk memastikan mereka tetap aktif untuk waktu yg diperlukan.\n"
+"* Kita akan membahas lebih dalam menenai peminjaman ketika sampai pada bab kepemilikan."
 
 #: src/basic-syntax/slices.md:1
 msgid "# Slices"
