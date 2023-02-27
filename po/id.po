@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-02-27 23:36+0700\n"
+"PO-Revision-Date: 2023-02-28 04:45+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -2590,7 +2590,7 @@ msgstr ""
 
 #: src/basic-syntax/slices.md:3
 msgid "A slice gives you a view into a larger collection:"
-msgstr ""
+msgstr "Sebuah slice akan memberikan anda gambaran kecil dari suatu grup yg lebih besar:"
 
 #: src/basic-syntax/slices.md:5
 msgid ""
@@ -2613,11 +2613,15 @@ msgid ""
 "* Slices borrow data from the sliced type.\n"
 "* Question: What happens if you modify `a[3]`?"
 msgstr ""
+"* Slice meminjam data dari tipe yg dipotongnya.\n"
+"* Pertanyaan: Apa yg terjadi jika anda mengubah nilai `a[3]`?"
 
 #: src/basic-syntax/slices.md:20
 msgid ""
 "* We create a slice by borrowing `a` and specifying the starting and ending indexes in brackets."
 msgstr ""
+"* Kita membuat slice dg meminjam `a` dan menyatakan indeks awal dan akhirnya menggunakan kurung "
+"kotak."
 
 #: src/basic-syntax/slices.md:22
 msgid ""
@@ -2626,10 +2630,14 @@ msgid ""
 "    \n"
 "* The same is true for the last index, so `&a[2..a.len()]` and `&a[2..]` are identical."
 msgstr ""
+"* Jika slice dimulai dari indeks 0, maka kita dapat mengabaikan penulisannya, artinya `&a[0..a."
+"len()]` dan `&a[..a.len()]` identik.\n"
+"\n"
+"* Hal yg sama juga berlaku untuk indeks terakhir, sehingga `&a[2..a.len()]` dan `&a[2..]` identik."
 
 #: src/basic-syntax/slices.md:26
 msgid "* To easily create a slice of the full array, we can therefore use `&a[..]`."
-msgstr ""
+msgstr "* Karenanya kita bisa menulis `&a[..]`, untuk membuat slice array utuh."
 
 #: src/basic-syntax/slices.md:28
 msgid ""
@@ -2645,6 +2653,17 @@ msgid ""
 "and `s` safely. \n"
 "  More details will be explained in the borrow checker section."
 msgstr ""
+"* `s` adalah reference dari slice `i32`. Perhatikan, sekarang tipe `s` (`&[i32]`) tidak lagi "
+"menuliskan ukurannya. Hal ini memungkinkan kita untuk melakukan perhitungan pada slice dg ukuran "
+"yg berbeda.\n"
+"\n"
+"* Slice selalu melakukan peminjaman. Pada contoh diatas, `a` harus tetap ‘hidup’ (dalam cakupan) "
+"setidaknya selama slice tsb hidup.\n"
+"\n"
+"* Pengubahan nilai `a[3]` dapat memantik suatu pertanyaan yg menarik. Secara kesimpulan, untuk "
+"alasan keamanan memori, anda tidak dapat mengubah suatu slice setelah anda membuatnya, tetapi anda "
+"masih bisa membacanya baik `a` maupun `s`. Pembahasan lebih rinci akan dijelaskan pada bab uji "
+"peminjaman."
 
 #: src/basic-syntax/string-slices.md:1
 msgid "# `String` vs `str`"
