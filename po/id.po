@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-03-02 03:27+0700\n"
+"PO-Revision-Date: 2023-03-04 16:01+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -2894,13 +2894,16 @@ msgstr ""
 
 #: src/basic-syntax/methods.md:1 src/methods.md:1
 msgid "# Methods"
-msgstr ""
+msgstr "# Metode"
 
 #: src/basic-syntax/methods.md:3
 msgid ""
 "Rust has methods, they are simply functions that are associated with a particular type. The\n"
 "first argument of a method is an instance of the type it is associated with:"
 msgstr ""
+"Rust memiliki sesuatu yg disebut Metode, yang sebenarnya hanyalah suatu fungsi, yg terhubung pada "
+"suatu tipe tertentu.\n"
+"Argumen pertama dari suatu Metode adalah sebuah instansi dari tipe yang terhubung dengannya:"
 
 #: src/basic-syntax/methods.md:6
 msgid ""
@@ -2910,6 +2913,11 @@ msgid ""
 "    height: u32,\n"
 "}"
 msgstr ""
+"```rust,editable\n"
+"struct PersegiPanjang {\n"
+"    panjang: u32,\n"
+"    lebar: u32,\n"
+"}"
 
 #: src/basic-syntax/methods.md:12
 msgid ""
@@ -2918,6 +2926,10 @@ msgid ""
 "        self.width * self.height\n"
 "    }"
 msgstr ""
+"impl PersegiPanjang {\n"
+"    fn luas(&self) -> u32 {\n"
+"        self.panjang * self.lebar\n"
+"    }"
 
 #: src/basic-syntax/methods.md:17
 msgid ""
@@ -2926,6 +2938,10 @@ msgid ""
 "    }\n"
 "}"
 msgstr ""
+"    fn tambah_panjang(&mut self, selisih: u32) {\n"
+"        self.panjang += selisih;\n"
+"    }\n"
+"}"
 
 #: src/basic-syntax/methods.md:22
 msgid ""
@@ -2937,10 +2953,17 @@ msgid ""
 "}\n"
 "```"
 msgstr ""
+"fn main() {\n"
+"    let mut pp = PersegiPanjang { panjang: 10, lebar: 5 };\n"
+"    println!(\"luas awal: {}\", pp.luas());\n"
+"    pp.tambah_panjang(5);\n"
+"    println!(\"luas baru: {}\", pp.luas());\n"
+"}\n"
+"```"
 
 #: src/basic-syntax/methods.md:30
 msgid "* We will look much more at methods in today's exercise and in tomorrow's class."
-msgstr ""
+msgstr "* Kita akan melihat lebih banyak Metode dalam latihan hari ini dan besok."
 
 #: src/basic-syntax/functions-interlude.md:1
 msgid "# Function Overloading"
