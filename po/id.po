@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-03-04 16:13+0700\n"
+"PO-Revision-Date: 2023-03-04 17:03+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -3034,23 +3034,23 @@ msgstr ""
 
 #: src/exercises/day-1/morning.md:1
 msgid "# Day 1: Morning Exercises"
-msgstr ""
+msgstr "# Hari 1: Latihan Pagi"
 
 #: src/exercises/day-1/morning.md:3
 msgid "In these exercises, we will explore two parts of Rust:"
-msgstr ""
+msgstr "Pada latihan kali ini, kita akan menjelajahi dua bagian dari Rust:"
 
 #: src/exercises/day-1/morning.md:5
 msgid "* Implicit conversions between types."
-msgstr ""
+msgstr "* Konversi implisit antar tipe."
 
 #: src/exercises/day-1/morning.md:7
 msgid "* Arrays and `for` loops."
-msgstr ""
+msgstr "* Array dan pengulangan `for`."
 
 #: src/exercises/day-1/morning.md:11
 msgid "A few things to consider while solving the exercises:"
-msgstr ""
+msgstr "Beberapa hal yg harus diperhatikan ketika menyelesaikan latihan:"
 
 #: src/exercises/day-1/morning.md:13
 msgid ""
@@ -3058,41 +3058,50 @@ msgid ""
 "  auto-completion in your editor. See the page about [Using Cargo] for details\n"
 "  on installing Rust."
 msgstr ""
+"* Gunakan instalasi lokal Rust, sebisa mungkin. Sehingga anda mendapatkan\n"
+"  fitur auto-completion pada editor anda. Lihat halaman mengenai [Penggunaan Cargo] untuk lebih "
+"rinci\n"
+"  mengenai instalasi Rust."
 
 #: src/exercises/day-1/morning.md:17
 msgid "* Alternatively, use the Rust Playground."
-msgstr ""
+msgstr "* Untuk alternatif, bisa juga menggunakan Rust Playground."
 
 #: src/exercises/day-1/morning.md:19
 msgid ""
 "The code snippets are not editable on purpose: the inline code snippets lose\n"
 "their state if you navigate away from the page."
 msgstr ""
+"Snipet kode memang sengaja dibuat tidak bisa dimodifikasi: snipet kode akan kehilangan state nya "
+"ketika anda pergi dari halaman tersebut."
 
 #: src/exercises/day-1/morning.md:22 src/exercises/day-1/afternoon.md:11
 #: src/exercises/day-2/morning.md:11 src/exercises/day-2/afternoon.md:7
 #: src/exercises/day-3/morning.md:7 src/exercises/day-4/morning.md:12
 msgid "After looking at the exercises, you can look at the [solutions] provided."
-msgstr ""
+msgstr "Setelah melihat latihan, anda bisa melihat [solusi] yg tersedia."
 
 #: src/exercises/day-1/morning.md:24 src/exercises/day-2/morning.md:13
 #: src/exercises/day-3/morning.md:9 src/exercises/day-4/morning.md:14
 msgid "[solutions]: solutions-morning.md"
-msgstr ""
+msgstr "[solusi]: solutions-morning.md"
 
 #: src/exercises/day-1/morning.md:26
 msgid "[Using Cargo]: ../../cargo.md"
-msgstr ""
+msgstr "[Penggunaan Cargo]: ../../cargo.md"
 
 #: src/exercises/day-1/implicit-conversions.md:1
 msgid "# Implicit Conversions"
-msgstr ""
+msgstr "# Konversi Implisit"
 
 #: src/exercises/day-1/implicit-conversions.md:3
 msgid ""
 "Rust will not automatically apply _implicit conversions_ between types ([unlike\n"
 "C++][3]). You can see this in a program like this:"
 msgstr ""
+"Rust tidak akan secara otomatis menerapkan _konversi implisit_ antar tipe([tidak seperti C++]"
+"[3]).\n"
+"Anda dapat melihatnya dalam program dibawah ini:"
 
 #: src/exercises/day-1/implicit-conversions.md:6
 msgid ""
@@ -3101,6 +3110,10 @@ msgid ""
 "    x * y\n"
 "}"
 msgstr ""
+"```rust,editable,compile_fail\n"
+"fn perkalian(x: i16, y: i16) -> i16 {\n"
+"    x * y\n"
+"}"
 
 #: src/exercises/day-1/implicit-conversions.md:11
 msgid ""
@@ -3108,6 +3121,9 @@ msgid ""
 "    let x: i8 = 15;\n"
 "    let y: i16 = 1000;"
 msgstr ""
+"fn main() {\n"
+"    let x: i8 = 15;\n"
+"    let y: i16 = 1000;"
 
 #: src/exercises/day-1/implicit-conversions.md:15
 msgid ""
@@ -3115,6 +3131,9 @@ msgid ""
 "}\n"
 "```"
 msgstr ""
+"    println!(\"{x} * {y} = {}\", perkalian(x, y));\n"
+"}\n"
+"```"
 
 #: src/exercises/day-1/implicit-conversions.md:19
 msgid ""
@@ -3124,6 +3143,10 @@ msgid ""
 "Implementing these traits is how a type expresses that it can be converted into\n"
 "another type."
 msgstr ""
+"Semua tipe integer Rust mengimplementasikan trait [`From<T>`][1] dan [`Into<T>`][2] untuk "
+"melakukan konversi.\n"
+"Trait `From<T>` memiliki metode `from()` dan begitupula dg `Into<T>` memiliki metode `into()`.\n"
+"Adanya implementasi ini menunjukan bahwa tipe ini bisa dikonversi ketipe lainnya."
 
 #: src/exercises/day-1/implicit-conversions.md:25
 msgid ""
@@ -3132,20 +3155,26 @@ msgid ""
 "`i16::from(x)`. Or, simpler, with `x.into()`, because `From<i8> for i16`\n"
 "implementation automatically create an implementation of `Into<i16> for i8`."
 msgstr ""
+"Pustaka standar memiliki implementasi `From<i8> untuk i16`, artinya kita dapat\n"
+"melakukan konversi variabel `x` dari tipe `i8` ke `i16` dg memanggil `i16::from(x)`.\n"
+"Atau, lebih sederhana, menggunakan `x.into()` karena implementasi `From<i8> untuk i16`\n"
+"secara otomatis memberikan implementasi dari `Into<i16> untuk i8`."
 
 #: src/exercises/day-1/implicit-conversions.md:30
 msgid ""
 "The same applies for your own `From` implementations for your own types, so it is\n"
 "sufficient to only implement `From` to get a respective `Into` implementation automatically."
 msgstr ""
+"Hal yg sama juga terjadi pada implementasi `From` yg anda buat untuk suatu tipe, sehingga cukup\n"
+"dg mengimplementasikan `From` serta merta implementasi `Into` akan terpenuhi."
 
 #: src/exercises/day-1/implicit-conversions.md:33
 msgid "1. Execute the above program and look at the compiler error."
-msgstr ""
+msgstr "1. Jalankan program diatas, dan lihat error yg dilempar oleh kompiler."
 
 #: src/exercises/day-1/implicit-conversions.md:35
 msgid "2. Update the code above to use `into()` to do the conversion."
-msgstr ""
+msgstr "2. Perbaiki kode diatas menggunakan `into()` untuk melakukan konversi."
 
 #: src/exercises/day-1/implicit-conversions.md:37
 msgid ""
@@ -3155,6 +3184,11 @@ msgid ""
 "   [standard library documentation][1] to see if `From<T>` is implemented for\n"
 "   the pairs you check."
 msgstr ""
+"3. Coba ganti tipe dari `x` dan `y` ke tipe lain (seperti `f32`, `bool`, `i128`)\n"
+"    untuk melihat bagaimana anda bisa melakukan konversi dari satu tipe ke tipe lain.\n"
+"    Coba lakukan konversi dari tipe kecil ke tipe besar dan sebaliknya. Cek ke\n"
+"    [dokumentasi pustaka standar][1] untuk melihat jika `From<T>` telah diimplementasikan\n"
+"    pada pasangan tipe tersebut."
 
 #: src/exercises/day-1/implicit-conversions.md:43
 msgid ""
