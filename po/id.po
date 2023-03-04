@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-03-04 17:03+0700\n"
+"PO-Revision-Date: 2023-03-05 01:48+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -135,7 +135,7 @@ msgstr "Konversi secara Implisit"
 
 #: src/SUMMARY.md:38
 msgid "Arrays and for Loops"
-msgstr ""
+msgstr "Array dan Pengulangan"
 
 #: src/SUMMARY.md:40
 msgid "Day 1: Afternoon"
@@ -3199,11 +3199,11 @@ msgstr ""
 
 #: src/exercises/day-1/for-loops.md:1
 msgid "# Arrays and `for` Loops"
-msgstr ""
+msgstr "# Array dan Pengulangan `for`"
 
 #: src/exercises/day-1/for-loops.md:3
 msgid "We saw that an array can be declared like this:"
-msgstr ""
+msgstr "Sebuah array dapat dideklarasikan sebagai berikut:"
 
 #: src/exercises/day-1/for-loops.md:5
 msgid ""
@@ -3214,7 +3214,7 @@ msgstr ""
 
 #: src/exercises/day-1/for-loops.md:9
 msgid "You can print such an array by asking for its debug representation with `{:?}`:"
-msgstr ""
+msgstr "Anda dapat melihat isi array dg menggunakan representasi debug `{:?}`:"
 
 #: src/exercises/day-1/for-loops.md:11
 msgid ""
@@ -3230,7 +3230,7 @@ msgstr ""
 msgid ""
 "Rust lets you iterate over things like arrays and ranges using the `for`\n"
 "keyword:"
-msgstr ""
+msgstr "Rust dapat melakukan iterasi pada array dan range menggunakan pengulangan `for`:"
 
 #: src/exercises/day-1/for-loops.md:21
 msgid ""
@@ -3260,6 +3260,10 @@ msgid ""
 "Use the above to write a function `pretty_print` which pretty-print a matrix and\n"
 "a function `transpose` which will transpose a matrix (turn rows into columns):"
 msgstr ""
+"Gunakan kode diatas untuk menulis sebuah fungsi `pretty_print` dimana tugasnya adalah untuk "
+"mencetak isi matriks,\n"
+"dan sebuah fungsi `transpose` yg akan melakukan operasi transpose pada matriks (mengubah baris "
+"menjadi kolom):"
 
 #: src/exercises/day-1/for-loops.md:41
 msgid ""
@@ -3272,13 +3276,13 @@ msgstr ""
 
 #: src/exercises/day-1/for-loops.md:47
 msgid "Hard-code both functions to operate on 3 × 3 matrices."
-msgstr ""
+msgstr "Buat fungsinya dg kode yg secara eksplisit beroperasi pada matriks 3x3."
 
 #: src/exercises/day-1/for-loops.md:49
 msgid ""
 "Copy the code below to <https://play.rust-lang.org/> and implement the\n"
 "functions:"
-msgstr ""
+msgstr "Salin kode berikut ke <https://play.rust-lang.org/> dan implementasikan fungsinya:"
 
 #: src/exercises/day-1/for-loops.md:52 src/exercises/day-1/book-library.md:20
 #: src/exercises/day-2/health-statistics.md:13
@@ -3329,7 +3333,7 @@ msgstr ""
 
 #: src/exercises/day-1/for-loops.md:80
 msgid "## Bonus Question"
-msgstr ""
+msgstr "## Pertanyaan Bonus"
 
 #: src/exercises/day-1/for-loops.md:82
 msgid ""
@@ -3337,28 +3341,35 @@ msgid ""
 "argument and return types? Something like `&[&[i32]]` for a two-dimensional\n"
 "slice-of-slices. Why or why not?"
 msgstr ""
+"Bisakah anda menggunakan slice `&[i32]` daripada matriks eksplisit 3x3 untuk argumen dan "
+"kembaliannya?\n"
+"Seperti `&[&[i32]]` untuk slice dua dimensi. Jika bisa kenapa, jika tidak kenapa?"
 
 #: src/exercises/day-1/for-loops.md:87
 msgid ""
 "See the [`ndarray` crate](https://docs.rs/ndarray/) for a production quality\n"
 "implementation."
-msgstr ""
+msgstr "Lihat [crate `ndarray`](https://docs.rs/ndarray/) untuk implementasi kualitas produksi."
 
 #: src/exercises/day-1/for-loops.md:92
 msgid ""
 "The solution and the answer to the bonus section are available in the \n"
 "[Solution](solutions-morning.md#arrays-and-for-loops) section."
 msgstr ""
+"Solusi dan jawaban dari bab bonus tersedia pada bab [Solution](solutions-morning.md#arrays-and-for-"
+"loops)."
 
 #: src/basic-syntax/variables.md:1
 msgid "# Variables"
-msgstr ""
+msgstr "# Variabel"
 
 #: src/basic-syntax/variables.md:3
 msgid ""
 "Rust provides type safety via static typing. Variable bindings are immutable by\n"
 "default:"
 msgstr ""
+"Rust menyediakan keamanan tipe melalui static typing. Pengisian variabel secara default bersifat "
+"immutable:"
 
 #: src/basic-syntax/variables.md:6
 msgid ""
@@ -3379,6 +3390,10 @@ msgid ""
 "* Note that since `println!` is a macro, `x` is not moved, even using the function like syntax of "
 "`println!(\"x: {}\", x)`"
 msgstr ""
+"* Karena adanya inferensi tipe, `i32` tidak wajib dituliskan. Kita akan secara perlahan "
+"menghilangkan penulisan tipe sepanjang kursus.\n"
+"* Sebagai catatan, `println!` adalah Makro, sehingga `x` tidak berpindah, meskipun menggunakan "
+"sintaks seperti fungsi `println!(\": {}\", x)`"
 
 #: src/basic-syntax/type-inference.md:1
 msgid "# Type Inference"
