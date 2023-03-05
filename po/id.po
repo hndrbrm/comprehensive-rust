@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-03-06 05:50+0700\n"
+"PO-Revision-Date: 2023-03-06 05:59+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -3843,24 +3843,26 @@ msgstr ""
 
 #: src/memory-management/manual.md:1
 msgid "# Manual Memory Management"
-msgstr ""
+msgstr "# Pengelolaan Memori Manual"
 
 #: src/memory-management/manual.md:3
 msgid "You allocate and deallocate heap memory yourself."
-msgstr ""
+msgstr "Anda sendiri yg mengalokasi dan dealokasi memori heap."
 
 #: src/memory-management/manual.md:5
 msgid ""
 "If not done with care, this can lead to crashes, bugs, security vulnerabilities, and memory leaks."
 msgstr ""
+"Jika tidak dilakukan dg benar, hal ini akan berujung dg crash, bug, kerentanan keamanan, dan "
+"kebocoran memori."
 
 #: src/memory-management/manual.md:7
 msgid "## C Example"
-msgstr ""
+msgstr "## Contoh C"
 
 #: src/memory-management/manual.md:9
 msgid "You must call `free` on every pointer you allocate with `malloc`:"
-msgstr ""
+msgstr "Anda harus memanggil `free` pada tiap pointer yg anda alokasikan menggunakan `malloc`:"
 
 #: src/memory-management/manual.md:11
 msgid ""
@@ -3880,6 +3882,8 @@ msgid ""
 "Memory is leaked if the function returns early between `malloc` and `free`: the\n"
 "pointer is lost and we cannot deallocate the memory."
 msgstr ""
+"Memori akan bocor jika fungsi berakhir terlebih dahulu sebelum `free`: \n"
+"pointer akan hilang dan kita tidak bisa melakukan dealokasi memori."
 
 #: src/memory-management/scope-based.md:1
 msgid "# Scope-Based Memory Management"
