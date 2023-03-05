@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-03-05 12:14+0700\n"
+"PO-Revision-Date: 2023-03-05 20:48+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -3591,13 +3591,14 @@ msgstr ""
 
 #: src/basic-syntax/scopes-shadowing.md:1
 msgid "# Scopes and Shadowing"
-msgstr ""
+msgstr "# _Scope_ dan _Shadowing_"
 
 #: src/basic-syntax/scopes-shadowing.md:3
 msgid ""
 "You can shadow variables, both those from outer scopes and variables from the\n"
 "same scope:"
 msgstr ""
+"Anda bisa melakukan _shadow_ terhadap variabel, baik pada _scope_ luar maupun _scope_ yg sama:"
 
 #: src/basic-syntax/scopes-shadowing.md:6
 msgid ""
@@ -3606,6 +3607,10 @@ msgid ""
 "    let a = 10;\n"
 "    println!(\"before: {a}\");"
 msgstr ""
+"```rust,editable\n"
+"fn main() {\n"
+"    let a = 10;\n"
+"    println!(\"awal: {a}\");"
 
 #: src/basic-syntax/scopes-shadowing.md:11
 msgid ""
@@ -3613,6 +3618,9 @@ msgid ""
 "        let a = \"hello\";\n"
 "        println!(\"inner scope: {a}\");"
 msgstr ""
+"    {\n"
+"        let a = \"halo\";\n"
+"        println!(\"scope dalam: {a}\");"
 
 #: src/basic-syntax/scopes-shadowing.md:15
 msgid ""
@@ -3620,6 +3628,9 @@ msgid ""
 "        println!(\"shadowed in inner scope: {a}\");\n"
 "    }"
 msgstr ""
+"        let a = true;\n"
+"        println!(\"shadow di scope dalam: {a}\");\n"
+"    }"
 
 #: src/basic-syntax/scopes-shadowing.md:19
 msgid ""
@@ -3627,6 +3638,9 @@ msgid ""
 "}\n"
 "```"
 msgstr ""
+"    println!(\"akhir: {a}\");\n"
+"}\n"
+"```"
 
 #: src/basic-syntax/scopes-shadowing.md:25
 msgid ""
@@ -3638,6 +3652,14 @@ msgid ""
 "* The following code demonstrates why the compiler can't simply reuse memory locations when "
 "shadowing an immutable variable in a scope, even if the type does not change."
 msgstr ""
+"* Definisi: Shadowing berbeda dg mutasi, karena setelah shadowing kedua lokasi memori ada pada "
+"saat yg bersamaan. Keduanya dibawah nama yg sama, tergantung dimana anda menggunakannya.\n"
+"* Suatu variabel shadowing dapat memiliki tipe yg. berbeda.\n"
+"* Shadowing terlihat aneh pada awalnya, tetapi pada akhirnya akan berguna untuk mempertahankan "
+"nilai variabel setelah `.unwrap()`.\n"
+"* Kode berikut memperlihatkan kenapa kompiler tidak dapat begitu saja menggunakan kembali lokasi "
+"memori ketika melakukan shadowing variabel takbermutasi pada suatu scope, meskipun tipenya tidak "
+"berubah."
 
 #: src/basic-syntax/scopes-shadowing.md:30
 msgid ""
