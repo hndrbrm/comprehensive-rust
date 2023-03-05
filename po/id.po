@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-03-05 11:50+0700\n"
+"PO-Revision-Date: 2023-03-05 12:14+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -151,7 +151,7 @@ msgstr "Inferensi Tipe"
 
 #: src/SUMMARY.md:44
 msgid "static & const"
-msgstr ""
+msgstr "statik & konstan"
 
 #: src/SUMMARY.md:45
 msgid "Scopes and Shadowing"
@@ -3491,11 +3491,11 @@ msgstr ""
 
 #: src/basic-syntax/static-and-const.md:1
 msgid "# Static and Constant Variables"
-msgstr ""
+msgstr "# Variabel Statik dan Konstan"
 
 #: src/basic-syntax/static-and-const.md:3
 msgid "Global state is managed with static and constant variables."
-msgstr ""
+msgstr "Status global diatur oleh variabel statik dan konstan."
 
 #: src/basic-syntax/static-and-const.md:5
 msgid "## `const`"
@@ -3503,7 +3503,7 @@ msgstr ""
 
 #: src/basic-syntax/static-and-const.md:7
 msgid "You can declare compile-time constants:"
-msgstr ""
+msgstr "Anda bisa mendeklarasikan konstanta ketika-kompilasi:"
 
 #: src/basic-syntax/static-and-const.md:9
 msgid ""
@@ -3534,7 +3534,7 @@ msgstr ""
 
 #: src/basic-syntax/static-and-const.md:27
 msgid "According the the [Rust RFC Book][1] these are inlined upon use."
-msgstr ""
+msgstr "Menurut [Buku RFC Rust][1] konstanta tersebut akan dimasukan secara _inlined_."
 
 #: src/basic-syntax/static-and-const.md:29
 msgid "## `static`"
@@ -3542,7 +3542,7 @@ msgstr ""
 
 #: src/basic-syntax/static-and-const.md:31
 msgid "You can also declare static variables:"
-msgstr ""
+msgstr "Anda juga bisa mendeklarasikan variabel secara statik:"
 
 #: src/basic-syntax/static-and-const.md:33
 msgid ""
@@ -3564,10 +3564,13 @@ msgid ""
 "memory location.  This is useful for unsafe and embedded code, and the variable lives through the "
 "entirety of the program execution."
 msgstr ""
+"Seperti yg tertuang pada [Buku RFC Rust][1], _static_ tidak dipasang secara _inlined_ dan memiliki "
+"suatu alamat memori tertentu. Hal ini berguna bagi kode _embedded_ dan _unsafe_, dimana variabel "
+"akan hidup sepanjang eksekusi program."
 
 #: src/basic-syntax/static-and-const.md:44
 msgid "We will look at mutating static data in the [chapter on Unsafe Rust](../unsafe.md)."
-msgstr ""
+msgstr "Kita bisa lihat data statik _mutating_ pada [bab Rust Unsafe](../unsafe.md)."
 
 #: src/basic-syntax/static-and-const.md:48
 msgid ""
@@ -3577,6 +3580,10 @@ msgid ""
 "* It isn't super common that one would need a runtime evaluated constant, but it is helpful and "
 "safer than using a static."
 msgstr ""
+"* Informasikan bahwa `const` secara semantik mirip dg `constexpr` di C++.\n"
+"* `static`, di sisi lain, lebih mirip dg `const` atau variabel global mutable di C++.\n"
+"* Jarang kita membutuhkan suatu konstanta yg ditentukan ketika program berjalan, tetapi hal "
+"tersebut mungkin diperlukan dan lebih aman daripada menggunakan statik."
 
 #: src/basic-syntax/static-and-const.md:54
 msgid "[1]: https://rust-lang.github.io/rfcs/0246-const-vs-static.html"
