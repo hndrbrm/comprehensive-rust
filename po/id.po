@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-03-05 21:00+0700\n"
+"PO-Revision-Date: 2023-03-05 21:11+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -3712,7 +3712,7 @@ msgstr "Pertama, mari kita ulang kembali bagaimana pengelolaan memori bekerja."
 
 #: src/memory-management/stack-vs-heap.md:1
 msgid "# The Stack vs The Heap"
-msgstr ""
+msgstr "# Stack vs Heap"
 
 #: src/memory-management/stack-vs-heap.md:3
 msgid ""
@@ -3722,6 +3722,11 @@ msgid ""
 "  * Easy to manage: follows function calls.\n"
 "  * Great memory locality."
 msgstr ""
+"* Stack: Rentangan memori untuk menyimpan variabel lokal.\n"
+"  * Nilainya berukuran tetap dan diketahui saat kompilasi.\n"
+"  * Sangat cepat: cukup dengan memindah pointer stack.\n"
+"  * Mudah dikelola: mengikuti pemanggilan fungsi.\n"
+"  * Memori bersifat lokal."
 
 #: src/memory-management/stack-vs-heap.md:9
 msgid ""
@@ -3730,6 +3735,10 @@ msgid ""
 "  * Slightly slower than the stack: some book-keeping needed.\n"
 "  * No guarantee of memory locality."
 msgstr ""
+"* Heap: Penyimpanan nilai diluar panggilan fungsi.\n"
+"  * Nilainya berukuran dinamis yg ditentukan ketika program berjalan.\n"
+"  * Sedikit lebih lambat daripada stack: dibutuhkan semacam daftar indeks.\n"
+"  * Tidak ada jaminan lokalitas memori."
 
 #: src/memory-management/stack.md:1
 msgid "# Stack Memory"
