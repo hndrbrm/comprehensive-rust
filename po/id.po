@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-03-05 21:11+0700\n"
+"PO-Revision-Date: 2023-03-06 05:50+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -3742,13 +3742,15 @@ msgstr ""
 
 #: src/memory-management/stack.md:1
 msgid "# Stack Memory"
-msgstr ""
+msgstr "# Memori Stack"
 
 #: src/memory-management/stack.md:3
 msgid ""
 "Creating a `String` puts fixed-sized data on the stack and dynamically sized\n"
 "data on the heap:"
 msgstr ""
+"Membuat `String` akan menempatkan data berukuran tetap pada stack dan data berukuran dinamis pada "
+"heap:"
 
 #: src/memory-management/stack.md:6
 msgid ""
@@ -3781,18 +3783,25 @@ msgid ""
 "* Mention that a `String` is backed by a `Vec`, so it has a capacity and length and can grow if "
 "mutable via reallocation on the heap."
 msgstr ""
+"* Terangkan bahwa `String` menggunakan `Vec`, sehingga kapasitas dan ukurannya dapat berkembang "
+"jika bermutasi melalui alokasi ulang pada heap."
 
 #: src/memory-management/stack.md:30
 msgid ""
 "* If students ask about it, you can mention that the underlying memory is heap allocated using the "
 "[System Allocator] and custom allocators can be implemented using the [Allocator API]"
 msgstr ""
+"* Jika peserta menanyakan mengenai hal tersebut, anda dapat menerangkan bahwa memori yg "
+"dialokasikan adalah heap menggunakan [System Allocator] atau allocator custom yg bisa "
+"dimplementasikan menggunakan [Allocator API]"
 
 #: src/memory-management/stack.md:32
 msgid ""
 "* We can inspect the memory layout with `unsafe` code. However, you should point out that this is "
 "rightfully unsafe!"
 msgstr ""
+"* Kita bisa menginspeksi susunan memori dg kode `unsafe`. Tetapi, anda harus menekankan bahwa cara "
+"ini tidaklah aman!"
 
 #: src/memory-management/stack.md:34
 msgid ""
@@ -3811,6 +3820,20 @@ msgid ""
 "}\n"
 "```"
 msgstr ""
+"```rust,editable\n"
+"fn main() {\n"
+"    let mut s1 = String::from(\"Halo\");\n"
+"    s1.push(' ');\n"
+"    s1.push_str(\"dunia\");\n"
+"    // JANGAN LAKUKAN INI! Hanya untuk tujuan edukasi.\n"
+"    // String tidak memberikan jaminan struktur, jadi kode berikut bisa mengarah pada\n"
+"    // perilaku yg tak terduga.\n"
+"    unsafe {\n"
+"        let (capacity, ptr, len): (usize, usize, usize) = std::mem::transmute(s1);\n"
+"        println!(\"ptr = {ptr:#x}, len = {len}, capacity = {capacity}\");\n"
+"    }\n"
+"}\n"
+"```"
 
 #: src/memory-management/stack.md:51
 msgid ""
