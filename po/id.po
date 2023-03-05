@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-03-05 01:48+0700\n"
+"PO-Revision-Date: 2023-03-05 11:50+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -3397,11 +3397,11 @@ msgstr ""
 
 #: src/basic-syntax/type-inference.md:1
 msgid "# Type Inference"
-msgstr ""
+msgstr "# Inferensi Tipe"
 
 #: src/basic-syntax/type-inference.md:3
 msgid "Rust will look at how the variable is _used_ to determine the type:"
-msgstr ""
+msgstr "Rust akan menganalisa bagaimana variabel _digunakan_ untuk menentukan tipenya:"
 
 #: src/basic-syntax/type-inference.md:5
 msgid ""
@@ -3445,12 +3445,21 @@ msgid ""
 "declaration of a type.\n"
 "The compiler does the job for us and helps us to write a more concise code."
 msgstr ""
+"Slide ini mendemonstrasikan bagaimana kompiler Rust melakukan infer terhadap tipe, bergantung pada "
+"batasan yg diberikan oleh deklarasi variabel beserta penggunaannya.\n"
+"    \n"
+"Penting untuk digarisbawahi bahwa variabel dideklarasikan seperti ini bukan berarti semacam \"tipe "
+"sembarang\" yg bisa menampung semua tipe data.\n"
+"Kode mesin yg dihasilkan oleh deklarasi identik dg deklarasi tipe secara eksplisit.\n"
+"Kompiler akan membantu kita untuk menulis kode yg lebih ringkas."
 
 #: src/basic-syntax/type-inference.md:32
 msgid ""
 "The following code tells the compiler to copy into a certain generic container without the code "
 "ever explicitly specifying the contained type, using `_` as a placeholder:"
 msgstr ""
+"Kode berikut memberitahukan kompiler untuk menyalin pada container generik tanpa perlu kode yg "
+"secara eksplisit menyatakan tipenya, dg menggunakan `_` sebagai placeholder:"
 
 #: src/basic-syntax/type-inference.md:34
 msgid ""
@@ -3476,6 +3485,9 @@ msgid ""
 "on `FromIterator`, which [`HashSet`](https://doc.rust-lang.org/std/iter/trait.FromIterator.html) "
 "implements."
 msgstr ""
+"[`collect`](https://doc.rust-lang.org/stable/std/iter/trait.Iterator.html#method.collect) "
+"bergantung pada `FromIterator`, yg mengimplementasikan [`HashSet`](https://doc.rust-lang.org/std/"
+"iter/trait.FromIterator.html)."
 
 #: src/basic-syntax/static-and-const.md:1
 msgid "# Static and Constant Variables"
