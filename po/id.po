@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-03-05 20:48+0700\n"
+"PO-Revision-Date: 2023-03-05 21:00+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -3675,35 +3675,40 @@ msgstr ""
 
 #: src/memory-management.md:1
 msgid "# Memory Management"
-msgstr ""
+msgstr "# Pengelolaan Memori"
 
 #: src/memory-management.md:3
 msgid "Traditionally, languages have fallen into two broad categories:"
-msgstr ""
+msgstr "Secara tradisional, bahasa pemrograman terbagi menjadi 2 kategori:"
 
 #: src/memory-management.md:5
 msgid ""
 "* Full control via manual memory management: C, C++, Pascal, ...\n"
 "* Full safety via automatic memory management at runtime: Java, Python, Go, Haskell, ..."
 msgstr ""
+"* Kontrol penuh melalui pengelolaan memori secara manual: C, C++, Pascal, …\n"
+"* Keamanan total melalui pengelolaan memori secara otomatis pada saat program berjalan: Java, "
+"Python, Go, Haskell, …"
 
 #: src/memory-management.md:8
 msgid "Rust offers a new mix:"
-msgstr ""
+msgstr "Rust menawarkan sebuah opsi baru:"
 
 #: src/memory-management.md:10
 msgid ""
 "> Full control *and* safety via compile time enforcement of correct memory\n"
 "> management."
 msgstr ""
+"> Kontrol penuh *dan* aman melalui pengelolaan memori secara benar dan diterapkan ketika proses "
+"kompilasi."
 
 #: src/memory-management.md:13
 msgid "It does this with an explicit ownership concept."
-msgstr ""
+msgstr "Rust menerapkannya dengan menggunakan konsep kepemilikan secara eksplisit."
 
 #: src/memory-management.md:15
 msgid "First, let's refresh how memory management works."
-msgstr ""
+msgstr "Pertama, mari kita ulang kembali bagaimana pengelolaan memori bekerja."
 
 #: src/memory-management/stack-vs-heap.md:1
 msgid "# The Stack vs The Heap"
