@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-03-06 05:59+0700\n"
+"PO-Revision-Date: 2023-03-06 07:36+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -3887,11 +3887,11 @@ msgstr ""
 
 #: src/memory-management/scope-based.md:1
 msgid "# Scope-Based Memory Management"
-msgstr ""
+msgstr "# Pengelolaan Memori berdasarkan Scope"
 
 #: src/memory-management/scope-based.md:3
 msgid "Constructors and destructors let you hook into the lifetime of an object."
-msgstr ""
+msgstr "Konstruktor dan Destruktor terkait dg masa hidup suatu objek."
 
 #: src/memory-management/scope-based.md:5
 msgid ""
@@ -3899,16 +3899,20 @@ msgid ""
 "destroyed. The compiler guarantees that this happens, even if an exception is\n"
 "raised."
 msgstr ""
+"Dengan membungkus pointer dg suatu objek, anda dapat membebaskan memori ketika objek tersebut\n"
+"dihancurkan. Kompiler akan menjamin hal ini terjadi, meskipun muncul eksepsi."
 
 #: src/memory-management/scope-based.md:9
 msgid ""
 "This is often called _resource acquisition is initialization_ (RAII) and gives\n"
 "you smart pointers."
 msgstr ""
+"Hal ini sering disebut _resource acquisition is initialization_ (RAII) dan memberikan anda pointer "
+"pintar."
 
 #: src/memory-management/scope-based.md:12
 msgid "## C++ Example"
-msgstr ""
+msgstr "## Contoh C++"
 
 #: src/memory-management/scope-based.md:14
 msgid ""
@@ -3926,10 +3930,13 @@ msgid ""
 "* At the end of `say_hello`, the `std::unique_ptr` destructor will run.\n"
 "* The destructor frees the `Person` object it points to."
 msgstr ""
+"* Objek `std::unique_ptr` dialokasikan di stack, dan mengarah pada alokasi memori di heap.\n"
+"* Pada akhir fungsi `say_hello`, destruktor `std::unique_ptr` akan berjalan.\n"
+"* Destruktor akan membebaskan objek `Person` yg teralokasi sebelumnya."
 
 #: src/memory-management/scope-based.md:25
 msgid "Special move constructors are used when passing ownership to a function:"
-msgstr ""
+msgstr "Konstruktor khusus digunakan untuk mengalihkan kepemilikan suatu fungsi:"
 
 #: src/memory-management/scope-based.md:27
 msgid ""
