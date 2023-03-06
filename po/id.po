@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-03-06 07:36+0700\n"
+"PO-Revision-Date: 2023-03-06 22:34+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -3948,27 +3948,32 @@ msgstr ""
 
 #: src/memory-management/garbage-collection.md:1
 msgid "# Automatic Memory Management"
-msgstr ""
+msgstr "# Pengelolaan Memori Otomatis"
 
 #: src/memory-management/garbage-collection.md:3
 msgid ""
 "An alternative to manual and scope-based memory management is automatic memory\n"
 "management:"
 msgstr ""
+"Alternatif dari memori manual dan memori berdasarkan scope adalah dengan pengelolaan memori "
+"otomatis:"
 
 #: src/memory-management/garbage-collection.md:6
 msgid ""
 "* The programmer never allocates or deallocates memory explicitly.\n"
 "* A garbage collector finds unused memory and deallocates it for the programmer."
 msgstr ""
+"* Programmer tidak pernah mengalokasikan atau dealokasi memori secara eksplisit.\n"
+"* Garbage Collector akan mencari memori yg tidak digunakan dan mendealokasikan nya untuk "
+"programmer."
 
 #: src/memory-management/garbage-collection.md:9
 msgid "## Java Example"
-msgstr ""
+msgstr "## Contoh Java"
 
 #: src/memory-management/garbage-collection.md:11
 msgid "The `person` object is not deallocated after `sayHello` returns:"
-msgstr ""
+msgstr "Objek `person` tidak di dealokasi setelah panggilan `sayHello` selesai:"
 
 #: src/memory-management/garbage-collection.md:13
 msgid ""
