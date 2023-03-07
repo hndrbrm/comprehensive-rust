@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-03-06 22:34+0700\n"
+"PO-Revision-Date: 2023-03-08 00:32+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -3986,11 +3986,11 @@ msgstr ""
 
 #: src/memory-management/rust.md:1
 msgid "# Memory Management in Rust"
-msgstr ""
+msgstr "# Pengelolaan Memori di Rust"
 
 #: src/memory-management/rust.md:3
 msgid "Memory management in Rust is a mix:"
-msgstr ""
+msgstr "Pengelolaan memori di Rust adalah campuran:"
 
 #: src/memory-management/rust.md:5
 msgid ""
@@ -4001,10 +4001,16 @@ msgid ""
 "* A Rust user can choose the right abstraction for the situation, some even have no cost at "
 "runtime like C."
 msgstr ""
+"* Aman dan tepat seperti Java, tetapi tanpa garbage collector.\n"
+"* Tergantung pada abstraksi (atau kombinasi abstraksi) yg anda pilih, bisa sebuah pointer unik, "
+"reference counted, atau reference counted secara atomik.\n"
+"* Berdasarkan-Scope seperti C++, bedanya kompiler menerapkannya dg sangat ketat.\n"
+"* Pengguna Rust bisa memilih abstraksi yg tepat sesuai dg situasi, beberapa bahkan dilakukan "
+"ketika program berjalan seperti pada C."
 
 #: src/memory-management/rust.md:10
 msgid "It achieves this by modeling _ownership_ explicitly."
-msgstr ""
+msgstr "Hal ini dapat dilakukan dg permodelan _kepemilikan_ secara eksplisit."
 
 #: src/memory-management/rust.md:14
 msgid ""
@@ -4012,10 +4018,16 @@ msgid ""
 "types such as [Box], [Vec], [Rc], or [Arc]. These encapsulate ownership and memory allocation via "
 "various means, and prevent the potential errors in C."
 msgstr ""
+"* Jika peserta bertanya mengenai Bagaimana, Anda dapat menjelaskan bahwa di Rust hal ini dilakukan "
+"melalui wrapper RAII seperti [Box], [Vec], [Rc], atau [Arc].\n"
+"Mereka membungkus kepemilikan dan alokasi memori melalui beragam cara, dan mencegah kemungkinan "
+"error pada C."
 
 #: src/memory-management/rust.md:16
 msgid "* You may be asked about destructors here, the [Drop] trait is the Rust equivalent."
 msgstr ""
+"* Anda boleh bertanya mengenai destruktor pada titik ini, trait [Drop] adalah hal yg ekivalen dg "
+"Rust."
 
 #: src/memory-management/rust.md:20
 msgid ""
