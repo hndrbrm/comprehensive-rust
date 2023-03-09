@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-03-08 00:32+0700\n"
+"PO-Revision-Date: 2023-03-09 09:00+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -4040,15 +4040,15 @@ msgstr ""
 
 #: src/memory-management/comparison.md:1
 msgid "# Comparison"
-msgstr ""
+msgstr "# Perbandingan"
 
 #: src/memory-management/comparison.md:3
 msgid "Here is a rough comparison of the memory management techniques."
-msgstr ""
+msgstr "Berikut beberapa perbandingan teknik-teknik pengelolaan memori."
 
 #: src/memory-management/comparison.md:5
 msgid "## Pros of Different Memory Management Techniques"
-msgstr ""
+msgstr "## Pro dari berbagai macam teknik pengelolaan memori"
 
 #: src/memory-management/comparison.md:7
 msgid ""
@@ -4065,10 +4065,22 @@ msgid ""
 "  * No runtime overhead.\n"
 "  * Safe and correct."
 msgstr ""
+"* Manual seperti C:\n"
+"  * Tanpa proses tambahan ketika program berjalan.\n"
+"* Otomatis seperti Java:\n"
+"  * Otomatis secara total.\n"
+"  * Aman dan tepat.\n"
+"* Berdasarkan Scope seperti C++:\n"
+"  * Sebagian otomatis.\n"
+"  * Tanpa proses tambahan ketika program berjalan.\n"
+"* Berdasarkan Scope yg diterapkan oleh kompiler seperti Rust:\n"
+"  * Diterapkan oleh kompiler.\n"
+"  * Tanpa proses tambahan ketika program berjalan.\n"
+"  * Aman dan tepat."
 
 #: src/memory-management/comparison.md:20
 msgid "## Cons of Different Memory Management Techniques"
-msgstr ""
+msgstr "## Kontra dari berbagai macam teknik pengelolaan memori"
 
 #: src/memory-management/comparison.md:22
 msgid ""
@@ -4086,6 +4098,19 @@ msgid ""
 "  * Some upfront complexity.\n"
 "  * Can reject valid programs."
 msgstr ""
+"* Manual seperti C:\n"
+"  * Pakai-setelah-lepas.\n"
+"  * Pelepasan-berulang.\n"
+"  * Kebocoran memori.\n"
+"* Otomatis seperti Java:\n"
+"  * Jeda Garbage Collector ketika mencari memori yg hendak dilepas.\n"
+"  * Jeda pada destruktor.\n"
+"* Berdasarkan Scope seperti C++:\n"
+"  * Rumit, penggunaan oleh Programmer.\n"
+"  * Resiko digunakan-setelah-pelepasan.\n"
+"* Berdasarkan scope dan diterapkan oleh kompiler seperti Rust:\n"
+"  * Rumit di awal.\n"
+"  * Resiko salah deteksi meskipun kode benar."
 
 #: src/ownership.md:1
 msgid "# Ownership"
