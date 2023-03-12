@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-03-09 09:00+0700\n"
+"PO-Revision-Date: 2023-03-12 11:45+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -4114,13 +4114,13 @@ msgstr ""
 
 #: src/ownership.md:1
 msgid "# Ownership"
-msgstr ""
+msgstr "# Kepemilikan"
 
 #: src/ownership.md:3
 msgid ""
 "All variable bindings have a _scope_ where they are valid and it is an error to\n"
 "use a variable outside its scope:"
-msgstr ""
+msgstr "Semua variabel memiliki _scope_ dan akan error jika digunakan diluar scope nya:"
 
 #: src/ownership.md:6
 msgid ""
@@ -4146,6 +4146,9 @@ msgid ""
 "* A destructor can run here to free up resources.\n"
 "* We say that the variable _owns_ the value."
 msgstr ""
+"* Pada akhir scope, variabel _lepas_ dan data dibebaskan.\n"
+"* Destruktor bisa dijalankan pada titik ini untuk membebaskan resource.\n"
+"* Kita bisa katakan variabel _memiliki_ nilainya."
 
 #: src/ownership/move-semantics.md:1
 msgid "# Move Semantics"
