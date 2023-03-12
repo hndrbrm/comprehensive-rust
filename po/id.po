@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-03-12 12:28+0700\n"
+"PO-Revision-Date: 2023-03-12 13:39+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -4348,13 +4348,15 @@ msgstr ""
 
 #: src/ownership/moves-function-calls.md:1
 msgid "# Moves in Function Calls"
-msgstr ""
+msgstr "# Perpindahan pada Panggilan Fungsi"
 
 #: src/ownership/moves-function-calls.md:3
 msgid ""
 "When you pass a value to a function, the value is assigned to the function\n"
 "parameter. This transfers ownership:"
 msgstr ""
+"Ketika anda memindahkan nilai ke suatu fungsi, nilainya dimasukkan pada parameter fungsi. Hal ini "
+"akan memindahkan kepemilikan:"
 
 #: src/ownership/moves-function-calls.md:6
 msgid ""
@@ -4385,6 +4387,14 @@ msgid ""
 "* Rust makes it harder than C++ to inadvertently create copies by making move semantics the "
 "default, and by forcing programmers to make clones explicit."
 msgstr ""
+"* Dengan memanggil `say_hello`, `main` akan memberikan kepemilikan dari `name`. Setelah itu `name` "
+"tidak bisa lagi digunakan didalam `main`.\n"
+"* Memori heap yg dialokasikan untuk `name` akan dibebaskan pada akhir fungsi `say_hello`.\n"
+"* `main` akan menjaga kepemilikannya jika `name` dipindahkan melalui reference (`&name`) dan "
+"`say_hello` menerima parameter reference.\n"
+"* Bisa juga, `main` memindahkan salinan dari `name` ketika memanggil (`name.clone()`).\n"
+"* Rust, menjadikan penyalinan lebih sulit daripada C++, dg cara menjadikan pemindahan semantik "
+"sebagai default, dan memaksa programmer untuk melakukan penyalinan secara eksplisit."
 
 #: src/ownership/copy-clone.md:1
 msgid "# Copying and Cloning"
