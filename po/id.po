@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-03-12 13:39+0700\n"
+"PO-Revision-Date: 2023-03-12 14:30+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -4398,11 +4398,13 @@ msgstr ""
 
 #: src/ownership/copy-clone.md:1
 msgid "# Copying and Cloning"
-msgstr ""
+msgstr "# Penyalinan dan Duplikasi"
 
 #: src/ownership/copy-clone.md:3
 msgid "While move semantics are the default, certain types are copied by default:"
 msgstr ""
+"Meskipun pemindahan semantik adalah default, beberapa jenis tipe tertentu secara default adalah "
+"disalin:"
 
 #: src/ownership/copy-clone.md:5
 msgid ""
@@ -4418,11 +4420,11 @@ msgstr ""
 
 #: src/ownership/copy-clone.md:14
 msgid "These types implement the `Copy` trait."
-msgstr ""
+msgstr "Tipe tersebut mengimplementasikan trait `Copy`."
 
 #: src/ownership/copy-clone.md:16
 msgid "You can opt-in your own types to use copy semantics:"
-msgstr ""
+msgstr "Anda bisa menggunakan semantik copy untuk tipe anda:"
 
 #: src/ownership/copy-clone.md:18
 msgid ""
@@ -4447,10 +4449,12 @@ msgid ""
 "* After the assignment, both `p1` and `p2` own their own data.\n"
 "* We can also use `p1.clone()` to explicitly copy the data."
 msgstr ""
+"* Setelah pengisian, baik `p1` dan `p2` memiliki datanya masing2.\n"
+"* Kita bisa juga menggunakan `p1.clone()` untuk melakukan salinan data secara eksplisit."
 
 #: src/ownership/copy-clone.md:35
 msgid "Copying and cloning are not the same thing:"
-msgstr ""
+msgstr "Penyalinan (copy) dan duplikasi (clone) bukan hal yg sama:"
 
 #: src/ownership/copy-clone.md:37
 msgid ""
@@ -4460,10 +4464,15 @@ msgid ""
 "`Clone` trait.\n"
 "* Copying does not work on types that implement the `Drop` trait."
 msgstr ""
+"* Penyalinan merujuk pada suatu area memori dan tidak bekerja pada sembarang objek.\n"
+"* Penyalinan tidak mengijinkan sembarang logika (tidak seperti konstruktor penyalinan di C++).\n"
+"* Duplikasi lebih merupakan operasi umum dan bisa juga digunakan untuk sembarang logika dg "
+"mengimplementasikan trait `Clone`.\n"
+"* Penyalinan tidak bekerja pada tipe yg mengimplementasikan trait `Drop`."
 
 #: src/ownership/copy-clone.md:42 src/ownership/lifetimes-function-calls.md:29
 msgid "In the above example, try the following:"
-msgstr ""
+msgstr "Menggunakan contoh diatas, coba beberapa hal berikut:"
 
 #: src/ownership/copy-clone.md:44
 msgid ""
@@ -4473,6 +4482,11 @@ msgid ""
 "`p1`.\n"
 "* Show that it works if you clone `p1` instead."
 msgstr ""
+"* Tambah field `String` pada `struct Point`. Kompilasi akan gagal karena `String` bukan sebuat "
+"tipe `Copy`.\n"
+"* Hapus `Copy` dari atribut `derive`. Sekarang kompiler akan mengeluarkan pesan error pada "
+"`println!` untuk `p1`.\n"
+"* Tunjukkan bahwa kode akan jalan jika `p1` diduplikasi."
 
 #: src/ownership/copy-clone.md:48
 msgid ""
@@ -4483,6 +4497,11 @@ msgid ""
 "    \n"
 "</details>"
 msgstr ""
+"Jika peserta bertanya mengenai `derive`, cukup beri penjelasan bahwa ini sebuah cara untuk "
+"menghasilkan suatu kode di Rust pada saat kompilasi.\n"
+"Pada kasus ini implementasi trait `Copy` dan `Clone` default dihasilkan.\n"
+"\n"
+"</details>"
 
 #: src/ownership/borrowing.md:1
 msgid "# Borrowing"
