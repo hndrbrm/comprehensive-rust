@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-03-12 11:45+0700\n"
+"PO-Revision-Date: 2023-03-12 12:28+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -4152,11 +4152,11 @@ msgstr ""
 
 #: src/ownership/move-semantics.md:1
 msgid "# Move Semantics"
-msgstr ""
+msgstr "# Pemindahan Semantik"
 
 #: src/ownership/move-semantics.md:3
 msgid "An assignment will transfer ownership between variables:"
-msgstr ""
+msgstr "Pengisian variabel akan memindahkan kepemilikan variabel:"
 
 #: src/ownership/move-semantics.md:5
 msgid ""
@@ -4178,20 +4178,28 @@ msgid ""
 "* When `s2` goes out of scope, the string data is freed.\n"
 "* There is always _exactly_ one variable binding which owns a value."
 msgstr ""
+"* Pengisian variabel dari `s1` ke `s2` memindahkan kepemilikan.\n"
+"* Data akan _berpindah_ dari `s1` dan `s1` tidak lagi bisa diakses.\n"
+"* Ketika `s1` keluar scope, tidak terjadi apa-apa: karena tidak memiliki kepemilikan.\n"
+"* Ketika `s2` keluar scope, data tulisan akan dibebaskan.\n"
+"* Akan selalu ada secara _tepat_ satu variabel yg terisi yg memiliki kepemilikan atas suatu nilai "
+"tertentu."
 
 #: src/ownership/move-semantics.md:22
 msgid ""
 "* Mention that this is the opposite of the defaults in C++, which copies by value unless you use "
 "`std::move` (and the move constructor is defined!)."
 msgstr ""
+"* Katakan juga bahwa hal ini berlawanan dg perilaku bawaan di C++, dimana variabel akan selalu "
+"disalin nilainya, kecuali jika kita menggunakan `std::move` (dan konstruktor move terdefinisi!)."
 
 #: src/ownership/move-semantics.md:24
 msgid "* In Rust, you clones are explicit (by using `clone`)."
-msgstr ""
+msgstr "* Di Rust, anda menyalin dg eksplisit (menggunakan `clone`)."
 
 #: src/ownership/moved-strings-rust.md:1
 msgid "# Moved Strings in Rust"
-msgstr ""
+msgstr "# Pemindahan Tulisan pada Rust"
 
 #: src/ownership/moved-strings-rust.md:3
 msgid ""
@@ -4208,10 +4216,12 @@ msgid ""
 "* The heap data from `s1` is reused for `s2`.\n"
 "* When `s1` goes out of scope, nothing happens (it has been moved from)."
 msgstr ""
+"* Data heap dari `s1` di gunakan lagi pada `s2`.\n"
+"* Ketika `s1` keluar dari scope, tidak akan terjadi apa-apa (karena nilainya sudah berpindah)."
 
 #: src/ownership/moved-strings-rust.md:13
 msgid "Before move to `s2`:"
-msgstr ""
+msgstr "Sebelum pindah ke `s2`:"
 
 #: src/ownership/moved-strings-rust.md:15
 msgid ""
@@ -4233,7 +4243,7 @@ msgstr ""
 
 #: src/ownership/moved-strings-rust.md:30
 msgid "After move to `s2`:"
-msgstr ""
+msgstr "Setelah pindah ke `s2`:"
 
 #: src/ownership/moved-strings-rust.md:32
 msgid ""
@@ -4261,11 +4271,11 @@ msgstr ""
 
 #: src/ownership/double-free-modern-cpp.md:1
 msgid "# Double Frees in Modern C++"
-msgstr ""
+msgstr "# Pembebasan Ganda pada C++ Modern"
 
 #: src/ownership/double-free-modern-cpp.md:3
 msgid "Modern C++ solves this differently:"
-msgstr ""
+msgstr "C++ Modern memecahkan masalah ini secara berbeda:"
 
 #: src/ownership/double-free-modern-cpp.md:5
 msgid ""
@@ -4274,16 +4284,22 @@ msgid ""
 "std::string s2 = s1;  // Duplicate the data in s1.\n"
 "```"
 msgstr ""
+"```c++\n"
+"std::string s1 = \"Cpp\";\n"
+"std::string s2 = s1;  // Menyalin data s1.\n"
+"```"
 
 #: src/ownership/double-free-modern-cpp.md:10
 msgid ""
 "* The heap data from `s1` is duplicated and `s2` gets its own independent copy.\n"
 "* When `s1` and `s2` go out of scope, they each free their own memory."
 msgstr ""
+"* Data heap dari `s1` disalin dan `s2` mendapatakan salinan nya yg saling bebas.\n"
+"* Ketika `s1` dan `s2` keluar scope, masing-masing akan membebaskan memori nya sendiri."
 
 #: src/ownership/double-free-modern-cpp.md:13
 msgid "Before copy-assignment:"
-msgstr ""
+msgstr "Sebelum penyalinan:"
 
 #: src/ownership/double-free-modern-cpp.md:16
 msgid ""
@@ -4304,7 +4320,7 @@ msgstr ""
 
 #: src/ownership/double-free-modern-cpp.md:30
 msgid "After copy-assignment:"
-msgstr ""
+msgstr "Setelah penyalinan:"
 
 #: src/ownership/double-free-modern-cpp.md:32
 msgid ""
