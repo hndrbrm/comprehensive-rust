@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-03-12 23:45+0700\n"
+"PO-Revision-Date: 2023-03-15 00:00+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -4612,17 +4612,19 @@ msgstr ""
 
 #: src/ownership/shared-unique-borrows.md:1
 msgid "# Shared and Unique Borrows"
-msgstr ""
+msgstr "# Peminjaman Unik dan Bersama (Shared)"
 
 #: src/ownership/shared-unique-borrows.md:3
 msgid "Rust puts constraints on the ways you can borrow values:"
-msgstr ""
+msgstr "Rust membatasi anda untuk meminjam suatu nilai:"
 
 #: src/ownership/shared-unique-borrows.md:5
 msgid ""
 "* You can have one or more `&T` values at any given time, _or_\n"
 "* You can have exactly one `&mut T` value."
 msgstr ""
+"* Anda bisa memiliki satu atau lebih nilai `&T`, _atau_\n"
+"* Anda hanya bisa memiliki satu buah nilai `&mut T`."
 
 #: src/ownership/shared-unique-borrows.md:8
 msgid ""
@@ -4658,6 +4660,13 @@ msgid ""
 "borrow of `a` through `c`. This is a feature of the borrow checker called \"non-lexical "
 "lifetimes\"."
 msgstr ""
+"* Kode diatas tidak dapat di kompilasi karena `a` dipinjam sebagai mutable (melalui `c`) dan "
+"sebagai immutable (melalui `b`) pada saat yg bersamaan.\n"
+"* Pindah pernyataan `println` untuk `b` sebelum scope untuk yg memperkenalkan `c` agar kode bisa "
+"dikompilasi.\n"
+"* Setelah perubahan tersebut, kompiler akan menyimpulkan bahwa `b` hanya digunakan sebelum "
+"peminjaman mutable `a` melalui `c`. Fitur ini bagian dari pengecekan pinjaman yg disebut sebagai "
+"“non-lexical lifetimes”."
 
 #: src/ownership/lifetimes.md:1
 msgid "# Lifetimes"
