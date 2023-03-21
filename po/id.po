@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-03-15 00:00+0700\n"
+"PO-Revision-Date: 2023-03-21 09:02+0700\n"
 "Last-Translator: Eyem <hndrbrm@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -4670,11 +4670,11 @@ msgstr ""
 
 #: src/ownership/lifetimes.md:1
 msgid "# Lifetimes"
-msgstr ""
+msgstr "# Waktu Hidup"
 
 #: src/ownership/lifetimes.md:3
 msgid "A borrowed value has a _lifetime_:"
-msgstr ""
+msgstr "Nilai yg dipinjam memiliki _waktu hidup_:"
 
 #: src/ownership/lifetimes.md:5
 msgid ""
@@ -4687,6 +4687,12 @@ msgid ""
 "  * Lifetime annotations create constraints; the compiler verifies that there is\n"
 "    a valid solution."
 msgstr ""
+"* Waktu hidup dapat diabaikan: `add(p1: &Point, p2: &Point) -> Point`.\n"
+"* Waktu hidup bisa juga eksplisit: `&'a Point`, `&'document str`.\n"
+"* Membaca nilai `&'a Point` sebagai \"pinjaman `Point` yg valid sepanjang waktu hidup `a`”.\n"
+"* Waktu hidup selalu ditentukan oleh kompiler: anda tidak dapat mengatur waktu hidup.\n"
+"  * Anotasi Waktu hidup akan membuat suatu batasan; yg akan diverifikasi oleh kompiler sebagai "
+"solusi."
 
 #: src/ownership/lifetimes-function-calls.md:1
 msgid "# Lifetimes in Function Calls"
